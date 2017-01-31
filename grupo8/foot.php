@@ -1,4 +1,4 @@
-<p><a href="http://notcake.com.br" target="_blank">Powered By · !Cake</a> </p>
+<p></p>
             </div>
             <!-- /.container-fluid -->
 
