@@ -586,11 +586,11 @@
                     $sql = "select P.pedidoID,
                     P.pedidoTitulo,
                     P.pedidoStatus,
-                    C.cupomTitulo,
+                    Cp.cupomTitulo,
                         P.cupomID,
                     C.clienteNome,
                         P.clienteID from tblPedido P
-                    inner join tblCupons C on C.cupomID = P.cupomID
+                    inner join tblCupons Cp on Cp.cupomID = P.cupomID
                                 inner join tblCliente C on C.clienteID = P.clienteID
                                 ";
 
@@ -635,11 +635,11 @@
                     $sql = "select P.pedidoID,
                     P.pedidoTitulo,
                     P.pedidoStatus,
-                    C.cupomTitulo,
+                    Cp.cupomTitulo,
                         P.cupomID,
                     C.clienteNome,
                         P.clienteID from tblPedido P
-                    inner join tblCupons C on C.cupomID = P.cupomID
+                    inner join tblCupons Cp on Cp.cupomID = P.cupomID
                                 inner join tblCliente C on C.clienteID = P.clienteID
                                 
                             " . $where . "
