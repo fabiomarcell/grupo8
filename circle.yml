@@ -3,4 +3,7 @@ deployment:
    staging:
       branch: master
       commands: 
-        - scp -r * grupo8@13.90.148.112:/var/www/html/
+        - scp -r grupo8/ grupo8@13.90.148.112:/var/www/html/
+test:
+   override:
+      - echo 'no tests, just say us Okay!'
