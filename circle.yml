@@ -1,5 +1,9 @@
+dependencies: 
+  pre:
+    - sudo apt-get update; sudo apt-get install ssh-pass
+    
 deployment:
-  production:
-    branch: master
-    commands:
-      - scp -r circle-pushing/* grupo8@13.90.148.112:/var/www/grupo8/
+   staging:
+      branch: master
+      commands: 
+        - scp -r grupo8/ grupo8@13.90.148.112:/var/www/grupo8/
