@@ -6,7 +6,7 @@ deployment:
    staging:
       branch: master
       commands: 
-         - echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDOX10CGSnCRpic9oHA6LqMF014PNrkqKVecJuUJOUv+HDpQe2slFJUZuTBdl4ofjXDGWM0sqTx5vpfafswRn0F2k88okK57IpfKwA3VNM5iJaiXeBybA9Zhr4m8GjHZ8vqGGesz3qinGlOqEmu5gj1YagE2XAflUIw1pVIqvIxlvFUdQ+G+Hic23ev6gEeKVq2wn3RgbIh0ITr84Ewfxl6ElT0vH1F9MTDKNc4BZ2tQtxfzyN1mCbqgKIQIFTE0ukGIvRt0x0OZSr2trkoOT958567mMrL4KsxghW6LJrwgloViY0mcx+YH0ZeQGnuwZyH/qWkfEIWg7//q2O1tIeMt87MvpM33KN7uv840hAlh7gzeRhKC4D3aO1pAZ/fOShpu/0qRFjhxdwBWUkMlTlDBLsPZHvoI4W5M3WPlVWrf1OXpu9cjna5b68XJNTSTkqEZ6/1BRdBx7le9DP/8SuQKP31gzEAtseJq9MjssEbu28n8Dm4Yk1pB6P2fXIIkJN6PCAv57BKUMPsJcEbwYEzNldv984b8W2kA/dDk7r5h1JNvLucCN9VOJDdfs2ViU+0gPNcFBA4CHWYdKBybM4bNppQG84y+/XqnVC0UIDfebdy+GVjiTrE3pfnyUVU/uwxKbJ1Xqz1v1sMcWV941LiB+Exs+yOESEVpTz4XjfmCQ== fabio.marcell@outlook.com" >> ~/.ssh/authorized_keys;
+         - echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDOX10CGSnCRpic9oHA6LqMF014PNrkqKVecJuUJOUv+HDpQe2slFJUZuTBdl4ofjXDGWM0sqTx5vpfafswRn0F2k88okK57IpfKwA3VNM5iJaiXeBybA9Zhr4m8GjHZ8vqGGesz3qinGlOqEmu5gj1YagE2XAflUIw1pVIqvIxlvFUdQ+G+Hic23ev6gEeKVq2wn3RgbIh0ITr84Ewfxl6ElT0vH1F9MTDKNc4BZ2tQtxfzyN1mCbqgKIQIFTE0ukGIvRt0x0OZSr2trkoOT958567mMrL4KsxghW6LJrwgloViY0mcx+YH0ZeQGnuwZyH/qWkfEIWg7//q2O1tIeMt87MvpM33KN7uv840hAlh7gzeRhKC4D3aO1pAZ/fOShpu/0qRFjhxdwBWUkMlTlDBLsPZHvoI4W5M3WPlVWrf1OXpu9cjna5b68XJNTSTkqEZ6/1BRdBx7le9DP/8SuQKP31gzEAtseJq9MjssEbu28n8Dm4Yk1pB6P2fXIIkJN6PCAv57BKUMPsJcEbwYEzNldv984b8W2kA/dDk7r5h1JNvLucCN9VOJDdfs2ViU+0gPNcFBA4CHWYdKBybM4bNppQG84y+/XqnVC0UIDfebdy+GVjiTrE3pfnyUVU/uwxKbJ1Xqz1v1sMcWV941LiB+Exs+yOESEVpTz4XjfmCQ== fabio.marcell@outlook.com" >> ~/.ssh/authorized_keys
         - scp -r grupo8/ grupo8@13.90.148.112:/var/www/html/
 test:
    override:
