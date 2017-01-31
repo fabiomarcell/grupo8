@@ -12,7 +12,9 @@
                     C.cupomOrigem,
                     C.cupomDescricao,
                     C.cupomValorExibir,
-                    C.cupomValorCobrar"); */
+                    C.cupomValorCobrar,
+                    (concat('".$img."tblCupons/',C.cupomImagem)) as foto,
+                    C.cupomImagem"); */
             ?>
             <div class="container-fluid">
 
@@ -34,7 +36,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <form id="theform" onsubmit="sendForm(); return false;">
-                            <div class="form-group ">
+                            <div class="form-group col-lg-12"><img id="resImg" src="<?=$dados['foto']?>" style="width:150px;"></div><div class="form-group ">
                                 <label class="sr-only" for="exampleInputEmail3">&nbsp;</label>
                                 <input  type="hidden" class="form-control" name="cupomID" id="cupomID" placeholder="" value="<?=$dados['cupomID']?>">
                               </div><div class="form-group col-lg-6">
@@ -52,6 +54,9 @@
                               </div><div class="form-group col-lg-6">
                                 <label class="sr-only" for="exampleInputEmail3">&nbsp;</label>
                                 <input  type="text" class="form-control" name="cupomValorCobrar" id="cupomValorCobrar" placeholder="Valor de Cobrança" value="<?=$dados['cupomValorCobrar']?>">
+                              </div><div class="form-group col-lg-6">
+                                <label class="sr-only" for="exampleInputEmail3">&nbsp;</label>
+                                <input data-filename-placement="inside" title="Imagem" type="file" class="form-control" name="cupomImagem" id="cupomImagem" placeholder="Imagem" value="<?=$dados['cupomImagem']?>">
                               </div>
                             <div class="clearfix"></div>
                             <br><br>
@@ -97,7 +102,37 @@
                             $("#message").html(data.message);
                             $("#message").addClass("alert-success");
                             $("#message").fadeIn("slow");
-                            history.back(-1);
+                            var form_data = new FormData();
+                                        var file_cupomImagem = $('#cupomImagem').prop('files')[0];
+                                        form_data.append('cupomImagem', file_cupomImagem );
+                                        $("#message").html($("#message").html() + "<br> Verificando upload de arquivo..." );
+
+
+                                        form_data.append('exec', "uploadtblCupons");
+                                        form_data.append('ID', <?=$id != "" ? "'".$id."'" : "data.ID"?>);
+
+
+                                        $.ajax({
+                                            url: 'actions.php', // point to server-side PHP script
+                                            dataType: 'json',  // what to expect back from the PHP script, if anything
+                                            cache: false,
+                                            contentType: false,
+                                            processData: false,
+                                            data: form_data,
+                                            type: 'post',
+                                            success: function(response){
+                                                //history.back(-1);
+                                              if(response.msg == "No Upload"){
+                                                history.back(-1);
+                                              }
+                                              else{
+                                                $("#resImg").attr("src", response.img);
+                                                $("#message").html(response.message );
+                                                history.back(-1);
+                                              }
+                                                console.log(response);
+                                            }
+                                        });
                             }
                             }, 1000);
                             }

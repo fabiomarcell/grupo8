@@ -31,7 +31,7 @@
                                 <table class="table table-bordered table-hover table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Título</th><th>(LOL, Americanas, Submarino, etc)</th><th>Valor de Exibição</th><th>Valor de Cobrança</th>
+                                            <th>Título</th><th>(LOL, Americanas, Submarino, etc)</th><th>Valor de Exibição</th><th>Valor de Cobrança</th><th>Imagem</th>
                                             <th>Manutenção</th>
                                         </tr>
                                     </thead>
@@ -41,7 +41,7 @@
                                         foreach ( $itens[ "pagina" ] as $item ) {
                                             ?>
                                             <tr>
-                                                <td><?= $item[ "cupomTitulo" ] ?></td><td><?= $item[ "cupomOrigem" ] ?></td><td><?= $item[ "cupomValorExibir" ] ?></td><td><?= $item[ "cupomValorCobrar" ] ?></td>
+                                                <td><?= $item[ "cupomTitulo" ] ?></td><td><?= $item[ "cupomOrigem" ] ?></td><td><?= $item[ "cupomValorExibir" ] ?></td><td><?= $item[ "cupomValorCobrar" ] ?></td><td><img src="<?= $item[ "foto" ] ?>" style="width:100px;"></td>
                                                 <td>
                                                     <a href="alterar-cupons/<?= $item[ "cupomID" ] ?>/">Alterar</a> || <a href="javascript:void(0);" onclick="removerRegistro('<?= $item[ "cupomID" ] ?>')" >Excluir</a><br>
                                                 </td>
