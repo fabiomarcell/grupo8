@@ -580,6 +580,155 @@
                     insertLogs("update", "Registro alterado com sucesso! (tblPlano)");
                     return array( "status" => true, "message" => "Registro alterado com sucesso!", "ID" => $pk);
                 }
+            //tblPedido
+                function getAlltblPedido(){
+                    global $pdo, $img;
+                    $sql = "select P.pedidoID,
+                    P.pedidoTitulo,
+                    P.pedidoStatus,
+                    C.cupomTitulo,
+                        P.cupomID,
+                    C.clienteNome,
+                        P.clienteID from tblPedido P
+                    inner join tblCupons C on C.cupomID = P.cupomID
+                                inner join tblCliente C on C.clienteID = P.clienteID
+                                ";
+
+                    $results = array();
+                    foreach ( $pdo->query( $sql ) as $row ) {
+                        $results[] = $row;
+                    }
+                    return $results;
+                }
+
+                function gettblPedido( $id ) {
+                    global $pdo, $img;
+                    try {
+                        $sql = "select P.pedidoID,
+                    P.pedidoTitulo,
+                    P.pedidoStatus,
+                        P.cupomID,
+                        P.clienteID from tblPedido P
+                            where pedidoID = :id";
+                        $query = $pdo->prepare( $sql );
+
+                        $query->bindParam( ":id", $id );
+                        $query->execute();
+
+                        foreach ( $query->fetchAll() as $row ) {
+                            return $row;
+                        }
+                    }
+                    catch ( PDOException $e ) {
+                        return false;;
+                        exit;
+                    }
+                }
+                function gettblPedidoPaginacao( $pg = 1, $filtro = NULL, $qtd = 20 ) {
+                    global $img;
+
+                    $finish = ($pg - 1) * $qtd;
+                    $start = $finish - $qtd;
+                    $where = "";
+                    $and;
+
+                    $sql = "select P.pedidoID,
+                    P.pedidoTitulo,
+                    P.pedidoStatus,
+                    C.cupomTitulo,
+                        P.cupomID,
+                    C.clienteNome,
+                        P.clienteID from tblPedido P
+                    inner join tblCupons C on C.cupomID = P.cupomID
+                                inner join tblCliente C on C.clienteID = P.clienteID
+                                
+                            " . $where . "
+                            LIMIT " . $qtd . " OFFSET " . $finish;
+                    //die(json_encode($sql));
+
+                    $pagina = getQuery( $sql );
+
+                    $sql = "select count(*) from tblPedido P
+                    inner join tblCupons C on C.cupomID = P.cupomID
+                                inner join tblCliente C on C.clienteID = P.clienteID
+                                
+                            " . $where;
+
+                    $paginacao = getPaginacao( $sql, $pg, $qtd );
+                    $arrRetorno = array( "pagina" => $pagina, "paginacao" => $paginacao );
+                    return $arrRetorno;
+                }
+
+                function inserttblPedido( $fields ) {
+                    global $pdo, $img;
+                    try {
+
+                        $stmt = $pdo->prepare( "insert into tblPedido
+                    (pedidoTitulo,
+                        pedidoStatus,
+                        cupomID,
+                        clienteID)
+                    values
+                    (:pedidoTitulo,
+                        :pedidoStatus,
+                        :cupomID,
+                        :clienteID)" );
+                        $stmt->execute(
+                                array(
+                                    ":pedidoTitulo" => $fields["pedidoTitulo"],
+                        ":pedidoStatus" => $fields["pedidoStatus"],
+                        ":cupomID" => $fields["cupomID"],
+                        ":clienteID" => $fields["clienteID"]
+                                )
+                        );
+                        $erro = $stmt->errorInfo();
+                        $valErro = $erro[ 0 ];
+                        if ( $valErro !== "00000" ) {
+                            insertLogs("insert", "Houve um erro em nosso servidor, tente novamente mais tarde, ou entre em contato conosco. (tblPedido)");
+                            return array( "status" => false, "message" => "Houve um erro em nosso servidor, tente novamente mais tarde, ou entre em contato conosco.", "devMessage" => $erro );
+                        }
+                    }
+                    catch ( PDOException $e ) {
+                        insertLogs("insert", $e->getMessage()." (tblPedido) ");
+                        return array( "status" => false, "message" => $e->getMessage() );
+                    }
+                    $id = $pdo->lastInsertId();
+                    insertLogs("insert", "Registro efetuado com sucesso! (tblPedido)");
+                    return array( "status" => true, "message" => "Registro efetuado com sucesso!", "ID" => $id);
+                }
+
+                function updatetblPedido( $fields, $pk ) {
+                    global $pdo, $img;
+                    try {
+
+                        $stmt = $pdo->prepare( "update tblPedido set
+                    pedidoTitulo = :pedidoTitulo,
+                        pedidoStatus = :pedidoStatus,
+                        cupomID = :cupomID,
+                        clienteID = :clienteID
+                    Where pedidoID = :pedidoID" );
+                        $stmt->execute(
+                                array(
+                                    ":pedidoID" => $pk,":pedidoTitulo" => $fields["pedidoTitulo"],
+                        ":pedidoStatus" => $fields["pedidoStatus"],
+                        ":cupomID" => $fields["cupomID"],
+                        ":clienteID" => $fields["clienteID"]
+                                )
+                        );
+                        $erro = $stmt->errorInfo();
+                        $valErro = $erro[ 0 ];
+                        if ( $valErro !== "00000" ) {
+                            insertLogs("update", "Houve um erro em nosso servidor, tente novamente mais tarde, ou entre em contato conosco. (tblPedido)");
+                            return array( "status" => false, "message" => "Houve um erro em nosso servidor, tente novamente mais tarde, ou entre em contato conosco.", "devMessage" => $erro );
+                        }
+                    }
+                    catch ( PDOException $e ) {
+                        insertLogs("update", $e->getMessage()." (tblPedido)");
+                        return array( "status" => false, "message" => $e->getMessage() );
+                    }
+                    insertLogs("update", "Registro alterado com sucesso! (tblPedido)");
+                    return array( "status" => true, "message" => "Registro alterado com sucesso!", "ID" => $pk);
+                }
             //tblCupons
                 function getAlltblCupons(){
                     global $pdo, $img;

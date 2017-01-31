@@ -22,6 +22,12 @@ RewriteRule ^(.*)$ $1.php
                 RewriteRule inserir-planos/ gerenciar-planos.php
                 RewriteRule inserir-planos gerenciar-planos.php
                 
+                RewriteRule alterar-pedido/([a-z,0-9,A-Z,_-]+)/ gerenciar-pedido.php?id=$1
+                RewriteRule alterar-pedido/([a-z,0-9,A-Z,_-]+) gerenciar-pedido.php?id=$1
+
+                RewriteRule inserir-pedido/ gerenciar-pedido.php
+                RewriteRule inserir-pedido gerenciar-pedido.php
+                
                 RewriteRule alterar-cupons/([a-z,0-9,A-Z,_-]+)/ gerenciar-cupons.php?id=$1
                 RewriteRule alterar-cupons/([a-z,0-9,A-Z,_-]+) gerenciar-cupons.php?id=$1
 

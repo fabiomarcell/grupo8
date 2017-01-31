@@ -88,7 +88,7 @@
                     </ul>
                 </li>
             </ul><div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav"><li> <a href='lista-'></a> </li><li> <a href='lista-usuarios'>Usuários</a> </li><li> <a href='lista-clientes'>Clientes</a> </li><li> <a href='lista-cupons'>Cupons</a> </li><li> <a href='lista-planos'>Planos</a> </li></ul></div>
+                <ul class="nav navbar-nav side-nav"><li> <a href='lista-'></a> </li><li> <a href='lista-usuarios'>Usuários</a> </li><li> <a href='lista-clientes'>Clientes</a> </li><li> <a href='lista-cupons'>Cupons</a> </li><li> <a href='lista-pedido'>Pedido</a> </li><li> <a href='lista-planos'>Planos</a> </li></ul></div>
             <!-- /.navbar-collapse -->
         </nav>
         <!-- END HEADER.php -->
