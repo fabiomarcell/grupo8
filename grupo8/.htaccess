@@ -1,0 +1,36 @@
+RewriteEngine on
+RewriteBase /grupo8/
+
+RewriteCond %{REQUEST_URI} index\.php
+RewriteRule ^(.*)index\.php$ /$1 [R=301,L]
+
+#RewriteCond %{HTTP_HOST} !^www\.
+#RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/ [R=301,L,QSA]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+                RewriteRule alterar-usuarios/([a-z,0-9,A-Z,_-]+)/ gerenciar-usuarios.php?id=$1
+                RewriteRule alterar-usuarios/([a-z,0-9,A-Z,_-]+) gerenciar-usuarios.php?id=$1
+
+                RewriteRule inserir-usuarios/ gerenciar-usuarios.php
+                RewriteRule inserir-usuarios gerenciar-usuarios.php
+                
+                RewriteRule alterar-planos/([a-z,0-9,A-Z,_-]+)/ gerenciar-planos.php?id=$1
+                RewriteRule alterar-planos/([a-z,0-9,A-Z,_-]+) gerenciar-planos.php?id=$1
+
+                RewriteRule inserir-planos/ gerenciar-planos.php
+                RewriteRule inserir-planos gerenciar-planos.php
+                
+                RewriteRule alterar-cupons/([a-z,0-9,A-Z,_-]+)/ gerenciar-cupons.php?id=$1
+                RewriteRule alterar-cupons/([a-z,0-9,A-Z,_-]+) gerenciar-cupons.php?id=$1
+
+                RewriteRule inserir-cupons/ gerenciar-cupons.php
+                RewriteRule inserir-cupons gerenciar-cupons.php
+                
+                RewriteRule alterar-clientes/([a-z,0-9,A-Z,_-]+)/ gerenciar-clientes.php?id=$1
+                RewriteRule alterar-clientes/([a-z,0-9,A-Z,_-]+) gerenciar-clientes.php?id=$1
+
+                RewriteRule inserir-clientes/ gerenciar-clientes.php
+                RewriteRule inserir-clientes gerenciar-clientes.php
+                
