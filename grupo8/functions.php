@@ -586,11 +586,11 @@
                     $sql = "select P.pedidoID,
                     P.pedidoTitulo,
                     P.pedidoStatus,
-                    Cp.cupomTitulo,
+                    C.cupomTitulo,
                         P.cupomID,
                     C.clienteNome,
                         P.clienteID from tblPedido P
-                    inner join tblCupons Cp on Cp.cupomID = P.cupomID
+                    inner join tblCupons C on C.cupomID = P.cupomID
                                 inner join tblCliente C on C.clienteID = P.clienteID
                                 ";
 
@@ -635,11 +635,11 @@
                     $sql = "select P.pedidoID,
                     P.pedidoTitulo,
                     P.pedidoStatus,
-                    Cp.cupomTitulo,
+                    C.cupomTitulo,
                         P.cupomID,
                     C.clienteNome,
                         P.clienteID from tblPedido P
-                    inner join tblCupons Cp on Cp.cupomID = P.cupomID
+                    inner join tblCupons C on C.cupomID = P.cupomID
                                 inner join tblCliente C on C.clienteID = P.clienteID
                                 
                             " . $where . "
@@ -737,7 +737,9 @@
                     C.cupomOrigem,
                     C.cupomDescricao,
                     C.cupomValorExibir,
-                    C.cupomValorCobrar from tblCupons C
+                    C.cupomValorCobrar,
+                    (concat('".$img."tblCupons/',C.cupomImagem)) as foto,
+                    C.cupomImagem from tblCupons C
                     ";
 
                     $results = array();
@@ -755,7 +757,9 @@
                     C.cupomOrigem,
                     C.cupomDescricao,
                     C.cupomValorExibir,
-                    C.cupomValorCobrar from tblCupons C
+                    C.cupomValorCobrar,
+                    (concat('".$img."tblCupons/',C.cupomImagem)) as foto,
+                    C.cupomImagem from tblCupons C
                             where cupomID = :id";
                         $query = $pdo->prepare( $sql );
 
@@ -784,7 +788,9 @@
                     C.cupomOrigem,
                     C.cupomDescricao,
                     C.cupomValorExibir,
-                    C.cupomValorCobrar from tblCupons C
+                    C.cupomValorCobrar,
+                    (concat('".$img."tblCupons/',C.cupomImagem)) as foto,
+                    C.cupomImagem from tblCupons C
                     
                             " . $where . "
                             LIMIT " . $qtd . " OFFSET " . $finish;
@@ -810,20 +816,23 @@
                         cupomOrigem,
                         cupomDescricao,
                         cupomValorExibir,
-                        cupomValorCobrar)
+                        cupomValorCobrar,
+                        cupomImagem)
                     values
                     (:cupomTitulo,
                         :cupomOrigem,
                         :cupomDescricao,
                         :cupomValorExibir,
-                        :cupomValorCobrar)" );
+                        :cupomValorCobrar,
+                        :cupomImagem)" );
                         $stmt->execute(
                                 array(
                                     ":cupomTitulo" => $fields["cupomTitulo"],
                         ":cupomOrigem" => $fields["cupomOrigem"],
                         ":cupomDescricao" => $fields["cupomDescricao"],
                         ":cupomValorExibir" => $fields["cupomValorExibir"],
-                        ":cupomValorCobrar" => $fields["cupomValorCobrar"]
+                        ":cupomValorCobrar" => $fields["cupomValorCobrar"],
+                        ":cupomImagem" => $fields["cupomImagem"]
                                 )
                         );
                         $erro = $stmt->errorInfo();

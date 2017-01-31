@@ -244,7 +244,27 @@
                         die(json_encode(updatetblCupons( $_POST, filter_input(INPUT_POST, "cupomID") )));
                     }
                 }
-                
+                else if ( $exec == "uploadtblCupons" ) {
+                                if(isset($_FILES["cupomImagem"]["name"])){
+                        $types = array(
+                            "png" => "image/png",
+                            "jpg" => "image/jpeg"
+                        );
+                        if ( !in_array( mime_content_type( $_FILES["cupomImagem"][ "tmp_name" ] ), $types ) ) {
+                            die( json_encode( array( "status" => false, "msg" => "Tipos de arquivo permitidos: 'Jpg | Png'" ) ) );
+                        }
+			$data = date("dmYHis");
+
+                        $oldmask = umask(0);
+                        mkdir($img."tblCupons", 0777, true);
+                        umask($oldmask);
+			move_uploaded_file($_FILES["cupomImagem"]["tmp_name"], $img."tblCupons/".$data.".jpg");
+			die(json_encode(updateImg("cupomImagem", $data.".jpg", "tblCupons/", "cupomID",  "tblCupons", filter_input(INPUT_POST, "ID"))));
+                            //$field, $name, $fieldPK, $table, $id = 0
+                        //die(json_encode(array("status" => true, "img" => $img."tblCupons/".$data.".jpg")));
+		}
+                                die(json_encode(array("status" => true, "msg" => "No Upload", "devMsg" => "")));
+                            }
                 else if ( $exec == "paginationBottomtblCupons" ) {
                     $pg = str_replace( "goTo-", "", filter_input( INPUT_POST, "pg" ) );
                     $paginas = gettblCuponsPaginacao( $pg, $filtro );
@@ -253,7 +273,7 @@
                     foreach ( $paginas[ 'pagina' ] as $pagina ) {
                         $paginaHTML .= "
                         <tr>
-                            <td>".$pagina["cupomTitulo"]."</td><td>".$pagina["cupomOrigem"]."</td><td>".$pagina["cupomValorExibir"]."</td><td>".$pagina["cupomValorCobrar"]."</td>
+                            <td>".$pagina["cupomTitulo"]."</td><td>".$pagina["cupomOrigem"]."</td><td>".$pagina["cupomValorExibir"]."</td><td>".$pagina["cupomValorCobrar"]."</td><td><img src=\"".$pagina["foto"]."\" style=\"width:100px;\"></td>
                             <td>
                                 <a href=\"alterar-cupons/".$pagina["cupomID"]."/\">Alterar</a> || <a href=\"javascript:void(0);\" onclick=\"removerRegistro('".$pagina["cupomID"]."')\" >Excluir</a><br>
                             </td>
