@@ -1,0 +1,5 @@
+deployment:
+  production:
+    branch: master
+    commands:
+      - scp -r circle-pushing/* grupo8@13.90.148.112:/var/www/grupo8/
