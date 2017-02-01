@@ -13,42 +13,7 @@
 	<div id="cupons" >
 	    <div class="centro res">
 	      <h3>Cupons Disponíveis</h3>
-	      <div class="cupom">
-		<img src="img/netflix.jpg"/>
-		<h4>Nome do cupom</h4>
-		<p>Texto explicativo do cupom. Bla bla bla.</p>
-		<p class="preco">R$ 20,00</p>
-	      </div>
-	      <div class="cupom">
-		<img src="img/netflix.jpg"/>
-		<h4>Nome do cupom</h4>
-		<p>Texto explicativo do cupom. Bla bla bla.</p>
-		<p class="preco">R$ 20,00</p>
-	      </div>
-	      <div class="cupom">
-		<img src="img/netflix.jpg"/>
-		<h4>Nome do cupom</h4>
-		<p>Texto explicativo do cupom. Bla bla bla.</p>
-		<p class="preco">R$ 20,00</p>
-	      </div>
-	      <div class="cupom">
-		<img src="img/netflix.jpg"/>
-		<h4>Nome do cupom</h4>
-		<p>Texto explicativo do cupom. Bla bla bla.</p>
-		<p class="preco">R$ 20,00</p>
-	      </div>
-	      <div class="cupom">
-		<img src="img/netflix.jpg"/>
-		<h4>Nome do cupom</h4>
-		<p>Texto explicativo do cupom. Bla bla bla.</p>
-		<p class="preco">R$ 20,00</p>
-	      </div>
-	      <div class="cupom">
-		<img src="img/netflix.jpg"/>
-		<h4>Nome do cupom</h4>
-		<p>Texto explicativo do cupom. Bla bla bla.</p>
-		<p class="preco">R$ 20,00</p>
-	      </div>
+	      <!--Stuff-->
 	      <div class="clear"></div>
 	    </div>
 	  </div>
