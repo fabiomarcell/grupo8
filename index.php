@@ -192,6 +192,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
+	<script src="js/bootbox.min.js"></script>
 	
 	<span id="page" style="display:none">1</span>
     <span id="trigger" style="display:none">true</span>
