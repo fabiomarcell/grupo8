@@ -12,7 +12,7 @@
         $html = "";
         foreach ( $registros as $registro ) {
             $html .= '<div class="col-md-4">
-                    <div class="fh5co-property">
+                    <div class="fh5co-property" style="margin-bottom: 50px;">
                         <figure>
                             <img src="grupo8/'.$registro['foto'].'" alt="" class="img-responsive">
                             <a href="#" class="tag">'.$registro['cupomOrigem'].'</a>
