@@ -39,9 +39,11 @@
             $mail->SMTPAuth = true;                   
             $mail->Username   = "contato@bitgift.com.br"; 
             $mail->Password   = "grupo!@#8!!!";
-            $mail->SMTPSecure = 'ssl';                          
-            $mail->Port = 465;
+            $mail->SMTPSecure = 'tls';                          
+            $mail->Port = 587;
 
+            $mail->From = filter_input(INPUT_POST, 'nome');
+            $mail->FromName = filter_input(INPUT_POST, 'nome');
             $mail->addAddress('fabio.marcell@outlook.com');     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Here is the subject';
