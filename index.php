@@ -300,7 +300,21 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 				    },
 				    callback: function (result) {
 				    	if(result){
-				    		console.log('This was logged in the callback: ' + $("#registerName").val());	
+				    		$.ajax({
+				                type: "POST",
+				                url: "actions.php",
+				                data: {
+				                	exec: 'verifCliente',
+				                	nome: $("#registerName").val(),
+				                	email: $("#registerEmail").val(),
+				                },
+				                dataType: 'json',
+				                processData: true,
+				                success: function (data) {
+				                    console.log(data);
+				                }
+				            });
+				    		//console.log('This was logged in the callback: ' + $("#registerName").val());	
 				    	}
 				    }
 				});

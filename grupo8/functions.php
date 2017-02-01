@@ -925,6 +925,32 @@
                         exit;
                     }
                 }
+
+                function gettblClienteByNomeEmail( $nome, $email ) {
+                    global $pdo, $img;
+                    try {
+                        $sql = "select C.clienteID,
+                    C.clienteNome,
+                    C.clienteEmail,
+                    C.clienteDescricao,
+                    C.clienteValidade from tblCliente C
+                            where C.clienteNome = :clienteNome and C.clienteEmail = :clienteEmail";
+                        $query = $pdo->prepare( $sql );
+
+                        $query->bindParam( ":clienteNome", $nome );
+                        $query->bindParam( ":clienteEmail", $email );
+                        $query->execute();
+
+                        foreach ( $query->fetchAll() as $row ) {
+                            return $row;
+                        }
+                    }
+                    catch ( PDOException $e ) {
+                        return false;;
+                        exit;
+                    }
+                }
+
                 function gettblClientePaginacao( $pg = 1, $filtro = NULL, $qtd = 20 ) {
                     global $img;
 

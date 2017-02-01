@@ -54,6 +54,10 @@
             //return false;
         }
     }
+    else if($exec == 'verifCliente'){
+        die(json_encode(gettblClienteByNomeEmail(filter_input(INPUT_POST, 'nome'), filter_input(INPUT_POST, 'email'))));
+    }
+    
 
 
 
