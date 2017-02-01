@@ -45,10 +45,13 @@
     }
     else if($exec == 'checkSession'){
         if($_SESSION['cliente']['clienteNome'] != ''){
-            return true;
+            die( json_encode( array( "status" => true ) ) );
+
+            //return true;
         }
         else{
-            return false;
+            die( json_encode( array( "status" => false ) ) );
+            //return false;
         }
     }
 
