@@ -46,10 +46,9 @@
             $mail->addAddress('contato@bitgift.com.br');     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Contato via site';
-            $mail->Body    = 'Mensagem de '. filter_input(INPUT_POST, 'nome').'<'. filter_input(INPUT_POST, 'email').'>
+            $mail->Body    = 'Mensagem de '. filter_input(INPUT_POST, 'nome').' - '. filter_input(INPUT_POST, 'email').'
                                 <br>
-                                Mensagem: "'.nl2br(filter_input(INPUT_POST, 'mensagem')).'"';
-            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+                                Mensagem: "'.nl2br(filter_input(INPUT_POST, 'message')).'"';
 
             if(!$mail->send()) {
                 //echo 'Message could not be sent.';
