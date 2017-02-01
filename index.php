@@ -1,4 +1,4 @@
-<?php include('header');?>
+<?php include('header.php');?>
 	
 
 	<aside id="fh5co-hero" clsas="js-fullheight">
