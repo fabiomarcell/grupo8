@@ -651,7 +651,7 @@
                     $pagina = getQuery( $sql );
 
                     $sql = "select count(*) from tblPedido P
-                    inner join tblCupons C on C.cupomID = P.cupomID
+                    inner join tblCupons Cp on Cp.cupomID = P.cupomID
                                 inner join tblCliente C on C.clienteID = P.clienteID
                                 
                             " . $where;
