@@ -15,9 +15,10 @@
                     <div class="fh5co-property">
                         <figure>
                             <img src="grupo8/'.$registro['foto'].'" alt="" class="img-responsive">
-                            <a href="#" class="tag">'.$registro['cupomTitulo'].'</a>
+                            <a href="#" class="tag">'.$registro['cupomOrigem'].'</a>
                         </figure>
                         <div class="fh5co-property-innter">
+                            <h3>'.$registro['cupomTitulo'].'</h3>
                             <div class="price-status">
                             <span class="price">R$ '. number_format($registro['cupomValorExibir'], 2, ',', '.').' </span>
                        </div>
