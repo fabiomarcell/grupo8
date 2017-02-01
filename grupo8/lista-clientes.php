@@ -31,7 +31,7 @@
                                 <table class="table table-bordered table-hover table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Nome</th><th>Email</th><th>Data de cadastro</th>
+                                            <th>Nome</th><th>Email</th><th>Telefone</th><th>Data de cadastro</th>
                                             <th>Manutenção</th>
                                         </tr>
                                     </thead>
@@ -41,7 +41,7 @@
                                         foreach ( $itens[ "pagina" ] as $item ) {
                                             ?>
                                             <tr>
-                                                <td><?= $item[ "clienteNome" ] ?></td><td><?= $item[ "clienteEmail" ] ?></td><td><?= $item[ "clienteValidade" ] ?></td>
+                                                <td><?= $item[ "clienteNome" ] ?></td><td><?= $item[ "clienteEmail" ] ?></td><td><?= $item[ "clienteTelefone" ] ?></td><td><?= $item[ "clienteValidade" ] ?></td>
                                                 <td>
                                                     <a href="alterar-clientes/<?= $item[ "clienteID" ] ?>/">Alterar</a> || <a href="javascript:void(0);" onclick="removerRegistro('<?= $item[ "clienteID" ] ?>')" >Excluir</a><br>
                                                 </td>

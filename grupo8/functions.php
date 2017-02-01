@@ -964,6 +964,7 @@
                     $sql = "select C.clienteID,
                     C.clienteNome,
                     C.clienteEmail,
+                    C.clienteTelefone,
                     C.clienteDescricao,
                     C.clienteValidade from tblCliente C
                     
