@@ -48,7 +48,7 @@
     else if($exec == 'verifCliente'){
         $cliente = gettblClienteByNomeEmail(filter_input(INPUT_POST, 'nome'), filter_input(INPUT_POST, 'email'));
         if(count($cliente) > 0){
-            $_SESSION['cliente']['clienteNome'] = $cliente[0];
+            $_SESSION['cliente'] = $cliente;
         }
         else{
             $novoCliente = array( "clienteNome" => filter_input(INPUT_POST, 'nome'),
@@ -57,7 +57,7 @@
                                      );
             $returnCliente = inserttblCliente(  $novoCliente);
             $cliente = gettblClienteByNomeEmail(filter_input(INPUT_POST, 'nome'), filter_input(INPUT_POST, 'email'));
-            $_SESSION['cliente']['clienteNome'] = $cliente[0];
+            $_SESSION['cliente']= $cliente;
         }
     }
     else if($exec == 'novoPedido'){
