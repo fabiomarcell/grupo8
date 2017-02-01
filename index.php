@@ -286,7 +286,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 				bootbox.confirm({
 				    message: "Olá! Você precisa se identificar para prosseguir. Assim que o procedimento for finalizado, nós iremos entrar em contato diretamente com você!<br>"+
 				    			"<input type='text' id='registerName' class='form-control'>"+
-				    			"<input type='email' id='registerEmail' class='form-control'>"
+				    			"<input type='email' id='registerEmail' class='form-control'>",
 				    buttons: {
 				        confirm: {
 				            label: 'Enviar!',
