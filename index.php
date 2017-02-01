@@ -110,7 +110,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 	
 	<div class="fh5co-section-with-image">
 		
-		<img src="" alt="" class="img-responsive">
+		<img src="images/" alt="" class="img-responsive" style="width:100%;">
 		<div class="fh5co-box animate-box">
 			<h2>Como Funciona</h2>
 			<ul>
