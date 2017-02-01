@@ -185,7 +185,6 @@
 	                    console.log(data);
 	                    if(!data.status){
 	                    	callRegister(cupom);
-	                    	novoPedido(cupom);
 	                    }
 	                    else{
 	                    	novoPedido(cupom);
@@ -232,6 +231,8 @@
 				    	}
 				    }
 				});
+            	novoPedido(cupom);
+
 			}
 		</script>
 
