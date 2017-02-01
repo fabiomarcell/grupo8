@@ -185,6 +185,7 @@
 	                    console.log(data);
 	                    if(!data.status){
 	                    	callRegister(cupom);
+	                    	novoPedido(cupom);
 	                    }
 	                    else{
 	                    	novoPedido(cupom);
@@ -224,7 +225,6 @@
 				                processData: true,
 				                success: function (data) {
 				                    console.log(data);
-        	                    	novoPedido(cupom);
 
 				                }
 				            });
