@@ -135,7 +135,7 @@
                                     setTimeout(function () {
                                         if (data.totalItens < 6) {
                                             $("#trigger").html("false");
-                                            $("#nextPage").fadeOut();
+                                            $("#nextPage").html("Sem Mais Resultados...");
                                         }
                                         else {
                                             $("#trigger").html("true");
