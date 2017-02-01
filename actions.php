@@ -14,7 +14,7 @@
             $html .= '<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
                     <div class="fh5co-property">
                         <figure>
-                            <img src="grupo8/upload/img/'.$registro['foto'].'" alt="" class="img-responsive">
+                            <img src="grupo8/'.$registro['foto'].'" alt="" class="img-responsive">
                             <a href="#" class="tag">'.$registro['cupomTitulo'].'</a>
                         </figure>
                         <div class="fh5co-property-innter">
