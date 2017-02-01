@@ -27,7 +27,7 @@
         $message = 'Mensagem de '. $nome .' - '. $email.'
                                 <br>
                                 Mensagem: "'.nl2br(filter_input(INPUT_POST, 'message')).'"';
-        if(auxSendMail($nome, $email, $message)){
+        if(auxSendMail($nome, 'contato@bitgift.com.br', $message)){
             die( json_encode( array( "status" => true, "msg" => "Sua mensagem foi enviada!" ) ) );
         }
         else{
@@ -74,7 +74,7 @@
         $novoPedido = inserttblPedido( $fields );
         if($novoPedido['status']){
             $message = "Novo pedido gerado pelo cliente ".$_SESSION['cliente']['clienteNome']." - ".$_SESSION['cliente']['clienteEmail'].": '".$cupom['cupomTitulo']."'";
-            auxSendMail('', '', $message, 'Novo Pedido!!');
+            auxSendMail('', 'contato@bitgift.com.br', $message, 'Novo Pedido!!');
         }
         die(json_encode($novoPedido));
     }
@@ -102,7 +102,7 @@
             $mail->Port = 587;
 
             $mail->setFrom("contato@bitgift.com.br","Contato .");
-            $mail->addAddress('contato@bitgift.com.br');     // Add a recipient              // Name is optional
+            $mail->addAddress($email);     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = $assunto;
             $mail->Body    = $message;
