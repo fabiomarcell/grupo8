@@ -4,6 +4,8 @@
     $exec = filter_input( INPUT_POST, 'exec' );
     if ( $exec == "scroll" ) {
         $pg = filter_input( INPUT_POST, 'pg' );
+                die( json_encode( array( "results" => $html, "pg" => $pg, "totalItens" => count( $registros ) ) ) );
+
         $registros = getCuponsSite( $pg );
         $pg += 1;
         $html = "";
