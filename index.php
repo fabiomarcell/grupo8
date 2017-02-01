@@ -284,20 +284,21 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 		<script>
 			function callRegister(){
 				bootbox.confirm({
-				    message: "This is a confirm with custom button text and color! Do you like it?<br>"+
-				    			"<input type='text'>",
+				    message: "Olá! Você precisa se identificar para prosseguir. Assim que o procedimento for finalizado, nós iremos entrar em contato diretamente com você!<br>"+
+				    			"<input type='text' id='registerName' class='form-control'>"+
+				    			"<input type='email' id='registerEmail' class='form-control'>"
 				    buttons: {
 				        confirm: {
-				            label: 'Yes',
+				            label: 'Enviar!',
 				            className: 'btn-success'
 				        },
 				        cancel: {
-				            label: 'No',
+				            label: 'Cancelar...',
 				            className: 'btn-danger'
 				        }
 				    },
 				    callback: function (result) {
-				        console.log('This was logged in the callback: ' + result);
+				        console.log('This was logged in the callback: ' + $("#registerName").val());
 				    }
 				});
 			}
