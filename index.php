@@ -14,7 +14,6 @@
 	    <div class="centro res">
 	      <h3>Cupons Disponíveis</h3>
 	      <!--Stuff-->
-	      <div class="clear"></div>
 	    </div>
 	  </div>
 
