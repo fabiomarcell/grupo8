@@ -27,42 +27,20 @@
 	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
 	
-	<!-- Animate.css -->
-	<link rel="stylesheet" href="css/animate.css">
-	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="css/icomoon.css">
-	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<!-- Flexslider  -->
-	<link rel="stylesheet" href="css/flexslider.css">
-	<!-- Theme style  -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width" />
+</head>
 
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-2.6.2.min.js"></script>
-	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="js/respond.min.js"></script>
-	<![endif]-->
-
-	</head>
-	<body>
-	
-	
-	<div id="fh5co-page">
-	<header id="fh5co-header" role="banner">
-		<div class="container">
-			<div class="row">
-				<div class="header-inner">
-					<h1><a href="index.html"><img src="images/Logo.png" style="width:100px"></a></h1>
-					<nav role="navigation">
-						<ul>
-							<li><a href="#sobre">Sobre</a></li>
-							<li><a href="#comoFunciona">Como Funciona?</a></li>
-							<li class="cta"><a href="#contato">Entre em contato</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
+<body>
+  <header>
+    <div class="centro">
+      <a href="/">
+	<img src="img/logo.png" width="121" height="46"/>
+      </a>
+      <ul> <!-- unordered list -->
+	<li>Sobre</li>
+	<li>Como Funciona?</li>
+	<li>Contato</li>
+      </ul>
+    </div>
+  </header>
