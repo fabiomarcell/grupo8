@@ -10,7 +10,7 @@
 
 	</aside>
 
-	<div id="cupons">
+	<div id="cupons" class="res">
 	    <div class="centro">
 	      <h3>Cupons Disponíveis</h3>
 	      <div class="cupom">
@@ -146,7 +146,7 @@
             function getPagination(pg) {
                 if ($("#trigger").html() === "true") {
                     $("#trigger").html("false");
-                    $("#res").fadeTo("slow", 0.3);
+                    $(".res").fadeTo("slow", 0.3);
                     setTimeout(function () {
                         $.ajax({
                             type: "POST",
@@ -160,7 +160,7 @@
                             success: function (data) {
                                 if (data.results !== "") {
                                 	console.log(data);
-                                    $("#res").append(data.results);
+                                    $(".res").append(data.results);
                                     setTimeout(function () {
                                         if (data.totalItens < 6) {
                                             $("#trigger").html("false");
@@ -173,9 +173,9 @@
                                     }, 500);
                                 }
                                 else {
-                                    $("#res").append('<div class="col-md-12"><h3>Sem Mais Resultados...</h3></div>');
+                                    $(".res").append('<div class="col-md-12"><h3>Sem Mais Resultados...</h3></div>');
                                 }
-                                $("#res").fadeTo("slow", 1);
+                                $(".res").fadeTo("slow", 1);
                             }
                         });
                     }, 1000);
