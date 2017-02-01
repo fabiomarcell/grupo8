@@ -243,6 +243,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 
 
             function sendMailContato(){
+                $("#resContato").html("Aguarde...");
             	$.ajax({
 	                type: "POST",
 	                url: "actions.php",
@@ -252,6 +253,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 	                success: function (data) {
 	                    console.log(data);
 	                    $("#resContato").html(data.msg);
+	                    $("#formContato")[0].reset();
 	                }
 	            });
             }
