@@ -1023,4 +1023,26 @@
                     }
                     insertLogs("update", "Registro alterado com sucesso! (tblCliente)");
                     return array( "status" => true, "message" => "Registro alterado com sucesso!", "ID" => $pk);
-                } ?>
+                } 
+
+                function getCuponsSite($page, $itens = 6){
+                    $pg -=1;
+                    $sql = "select C.cupomID,
+                            C.cupomTitulo,
+                            C.cupomOrigem,
+                            C.cupomDescricao,
+                            C.cupomValorExibir,
+                            C.cupomValorCobrar,
+                            (concat('".$img."tblCupons/',C.cupomImagem)) as foto,
+                            C.cupomImagem from tblCupons C
+                            limit " . $itens . " offset " . $pg * $itens;
+                    $results = array();
+                    foreach ( $pdo->query( $sql ) as $row ) {
+                        $results[] = $row;
+                    }
+                    return $results;
+
+                }
+
+
+                ?>

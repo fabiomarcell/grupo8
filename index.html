@@ -151,8 +151,6 @@
 
 
 				<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
-
-
 					<div class="fh5co-property">
 						<figure>
 							<img src="images/slide_3.jpg" alt="Free Website Templates FreeHTML5.co" class="img-responsive">
@@ -168,15 +166,13 @@
 	            	<p class="fh5co-property-specification">
 	            		<span><strong>3500</strong> Sq Ft</span>  <span><strong>3</strong> Beds</span>  <span><strong>3.5</strong> Baths</span>  <span><strong>2</strong> Garages</span>
 	            	</p>
-					</div>
-
-					
+					</div>				
 				</div>
 				
 
 
 			</div>
-			<p style="width:100%; text-align:center;"><a href="#" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+			<p style="width:100%; text-align:center;"><a href="javascript:void(0);" id="nextPage" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
 		</div>
 	</div>
 
@@ -297,7 +293,54 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 
 	<!-- MAIN JS -->
 	<script src="js/main.js"></script>
-
+	
+	<span id="page" style="display:none">1</span>
+    <span id="trigger" style="display:none">true</span>
+	<script>
+            $(document).ready(function () {
+                $("#nextPage").click(function (event) {
+                        getPagination($("#page").html());
+                });
+            });
+            function getPagination(pg) {
+                if ($("#trigger").html() === "true") {
+                    $("#trigger").html("false");
+                    $("#res").fadeTo("slow", 0.3);
+                    setTimeout(function () {
+                        $.ajax({
+                            type: "POST",
+                            url: "actions.php",
+                            data: {
+                                exec: 'scroll',
+                                pg: pg
+                            },
+                            dataType: 'json',
+                            processData: true,
+                            success: function (data) {
+                                if (data.results !== "") {
+                                    $("#res").append(data.results);
+                                    setTimeout(function () {
+                                        if (data.totalItens < 6) {
+                                            $("#trigger").html("false");
+                                        }
+                                        else {
+                                            $("#trigger").html("true");
+                                        }
+                                        $("#page").html(data.pg);
+                                    }, 500);
+                                }
+                                else {
+                                    $("#res").append('<div class="col-md-12"><h3>Sem Mais Resultados...</h3></div>');
+                                }
+                                $("#res").fadeTo("slow", 1);
+                            }
+                        });
+                    }, 1000);
+                }
+            }
+            getPagination(1);
+        </script>
+	
 	</body>
 </html>
 
