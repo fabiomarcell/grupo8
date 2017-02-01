@@ -42,8 +42,7 @@
             $mail->SMTPSecure = 'tls';                          
             $mail->Port = 587;
 
-            $mail->From = filter_input(INPUT_POST, 'nome');
-            $mail->FromName = filter_input(INPUT_POST, 'nome');
+            $mail->setFrom("contato@bitgift.com.br","Contato .");
             $mail->addAddress('fabio.marcell@outlook.com');     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Here is the subject';
