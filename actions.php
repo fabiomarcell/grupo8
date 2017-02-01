@@ -109,6 +109,8 @@
     function auxSendMail($nome, $email, $message, $assunto = "Contato via site"){
         require_once 'includes/phpmailer/PHPMailerAutoload.php';
             $mail = new PHPMailer;
+            $mail->CharSet = 'UTF-8';
+
             //$mail->SMTPDebug = 4;                         
             $mail->isSMTP();                                     
             $mail->Host = 'smtp.zoho.com'; 
