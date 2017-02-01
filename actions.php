@@ -47,6 +47,7 @@
     }
     else if($exec == 'verifCliente'){
         $cliente = gettblClienteByNomeEmail(filter_input(INPUT_POST, 'nome'), filter_input(INPUT_POST, 'email'));
+        die(json_encode($cliente));
         if(count($cliente) > 0){
             $_SESSION['cliente'] = $cliente;
         }
