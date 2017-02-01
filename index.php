@@ -18,7 +18,7 @@
 	    <div class="centro">
 			<p><button type="button" id="nextPage" class="btn btn-primary btn-outline with-arrow">Carregar Mais!</button></p>
 		</div>
-		<div class="centro">
+		<div class="clearfix">
 
 		</div>
 
