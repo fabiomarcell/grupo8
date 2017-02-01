@@ -299,7 +299,9 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 				        }
 				    },
 				    callback: function (result) {
-				        console.log('This was logged in the callback: ' + $("#registerName").val());
+				    	if(result){
+				    		console.log('This was logged in the callback: ' + $("#registerName").val());	
+				    	}
 				    }
 				});
 			}
