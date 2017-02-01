@@ -284,8 +284,8 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 		<script>
 			function callRegister(){
 				bootbox.confirm({
-				    message: "This is a confirm with custom button text and color! Do you like it?<br>
-				    			<input type='text'>",
+				    message: "This is a confirm with custom button text and color! Do you like it?<br>"+
+				    			"<input type='text'>",
 				    buttons: {
 				        confirm: {
 				            label: 'Yes',
