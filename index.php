@@ -107,7 +107,7 @@
 		<input type="hidden" name="exec" id="exec" value="sendMailContato"> 
 		<textarea name="message" id="message" placeholder="Informe sua mensagem..." required class="form-control"></textarea>
 		<br>
-		<p><button type="submit" class="btn btn-primary btn-outline with-arrow">Enviar! <i class="icon-arrow-right"></i></button></p>
+		<p><button type="submit" class="btn btn-primary btn-outline with-arrow">Enviar!</button></p>
 		<span id="resContato"></span>
 	</form>
     </div>

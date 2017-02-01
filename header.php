@@ -60,9 +60,9 @@
 	<img src="img/logo.png" width="121" height="46"/>
       </a>
       <ul> <!-- unordered list -->
-	<li>Sobre</li>
-	<li>Como Funciona?</li>
-	<li>Contato</li>
+	<li><a href="#sobre">Sobre</a></li>
+	<li><a href="#funcionamento">Como Funciona?</a></li>
+	<li><a href="#contato">Contato</a></li>
       </ul>
     </div>
   </header>
