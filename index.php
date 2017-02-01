@@ -224,10 +224,10 @@
 				                processData: true,
 				                success: function (data) {
 				                    console.log(data);
-                                	novoPedido(cupom);
 				                }
 				            });
 				    		//console.log('This was logged in the callback: ' + $("#registerName").val());	
+                        	novoPedido(cupom);
 				    	}
 				    }
 				});
