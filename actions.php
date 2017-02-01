@@ -33,7 +33,7 @@
     else if( $exec == 'sendMailContato'){
         require_once 'includes/phpmailer/PHPMailerAutoload.php';
             $mail = new PHPMailer;
-            $mail->SMTPDebug = 4;                         
+            //$mail->SMTPDebug = 4;                         
             $mail->isSMTP();                                     
             $mail->Host = 'smtp.zoho.com'; 
             $mail->SMTPAuth = true;                   
