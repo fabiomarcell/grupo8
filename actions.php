@@ -47,7 +47,18 @@
     }
     else if($exec == 'verifCliente'){
         $cliente = gettblClienteByNomeEmail(filter_input(INPUT_POST, 'nome'), filter_input(INPUT_POST, 'email'));
-        die(json_encode($cliente));
+        if(count($cliente) > 0){
+            $_SESSION['cliente']['clienteNome'] = $cliente[0];
+        }
+        else{
+            $novoCliente = array( "clienteNome" => filter_input(INPUT_POST, 'nome'),
+                                    "clienteEmail" => filter_input(INPUT_POST, 'email'),
+                                    "clienteDescrição" => "Cadastrado no site em ".date('d/m/Y H:i:s'),
+                                     );
+            $returnCliente = inserttblCliente(  $novoCliente);
+            $cliente = gettblClienteByNomeEmail(filter_input(INPUT_POST, 'nome'), filter_input(INPUT_POST, 'email'));
+            $_SESSION['cliente']['clienteNome'] = $cliente[0];
+        }
     }
     
 

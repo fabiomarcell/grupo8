@@ -987,19 +987,16 @@
                         $stmt = $pdo->prepare( "insert into tblCliente
                     (clienteNome,
                         clienteEmail,
-                        clienteDescricao,
-                        clienteValidade)
+                        clienteDescricao)
                     values
                     (:clienteNome,
                         :clienteEmail,
-                        :clienteDescricao,
-                        :clienteValidade)" );
+                        :clienteDescricao)" );
                         $stmt->execute(
                                 array(
                                     ":clienteNome" => $fields["clienteNome"],
                         ":clienteEmail" => $fields["clienteEmail"],
-                        ":clienteDescricao" => $fields["clienteDescricao"],
-                        ":clienteValidade" => $fields["clienteValidade"]
+                        ":clienteDescricao" => $fields["clienteDescricao"]
                                 )
                         );
                         $erro = $stmt->errorInfo();
