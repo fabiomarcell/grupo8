@@ -43,19 +43,21 @@
             $mail->Port = 587;
 
             $mail->setFrom("contato@bitgift.com.br","Contato .");
-            $mail->addAddress('fabio.marcell@outlook.com');     // Add a recipient              // Name is optional
+            $mail->addAddress('contato@bitgift.com.br');     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Here is the subject';
-            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+            $mail->Subject = 'Contato via site';
+            $mail->Body    = 'Mensagem de '. filter_input(INPUT_POST, 'nome').'<'. filter_input(INPUT_POST, 'email').'>
+                                <br>
+                                Mensagem: "'.nl2br(filter_input(INPUT_POST, 'mensagem')).'"';
             $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
             if(!$mail->send()) {
-                echo 'Message could not be sent.';
-                echo 'Mailer Error: ' . $mail->ErrorInfo;
-                die( json_encode( array( "status" => false, "msg" => $mail->ErrorInfo ) ) );
+                //echo 'Message could not be sent.';
+                //echo 'Mailer Error: ' . $mail->ErrorInfo;
+                die( json_encode( array( "status" => false, "msg" => "Houve um erro, tente novamente mais tarde..." ) ) );
 
             } else {
-                die( json_encode( array( "status" => true, "msg" => "OK" ) ) );
+                die( json_encode( array( "status" => true, "msg" => "Sua mensagem foi enviada!" ) ) );
             }
     }
 ?>
