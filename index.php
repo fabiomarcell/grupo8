@@ -141,7 +141,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 
 	
 
-	<div class="fh5co-cta" style="background-image: url(images/slide_4.jpg);">
+	<div class="fh5co-cta" style="background-image: url(images/image_1.jpg);">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="col-md-12 text-center animate-box" data-animate-effect="fadeIn">
@@ -156,7 +156,6 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 	
 			<div class="col-md-12 fh5co-copyright text-center">
 				<div class="col-md-2 col-md-push-5 col-sm-12 col-sm-push-0 col-xs-12 col-xs-push-0">
-					<h3>Follow Us</h3>
 					<ul class="fh5co-social">
 						<li><a href="#"><i class="icon-twitter"></i></a></li>
 						<li><a href="#"><i class="icon-facebook"></i></a></li>
