@@ -1025,7 +1025,7 @@
                     return array( "status" => true, "message" => "Registro alterado com sucesso!", "ID" => $pk);
                 } 
 
-                function getCuponsSite($page, $itens = 6){
+                function getCuponsSite($pg, $itens = 6){
                     $pg -=1;
                     $sql = "select C.cupomID,
                             C.cupomTitulo,
