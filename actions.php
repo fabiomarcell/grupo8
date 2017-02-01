@@ -15,7 +15,7 @@
                     <div class="fh5co-property" style="margin-bottom: 50px;">
                         <figure>
                             <img src="grupo8/'.$registro['foto'].'" alt="" class="img-responsive">
-                            <a href="#" class="tag">'.$registro['cupomOrigem'].'</a>
+                            <a href="javascript:void(0);" onclick="checkSession()" class="tag">'.$registro['cupomOrigem'].'</a>
                         </figure>
                         <div class="fh5co-property-innter">
                             <h3>'.$registro['cupomTitulo'].'</h3>
