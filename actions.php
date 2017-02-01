@@ -31,6 +31,22 @@
         die( json_encode( array( "results" => $html, "pg" => $pg, "totalItens" => count( $registros ) ) ) );
     }
     else if( $exec == 'sendMailContato'){
+        $nome = filter_input(INPUT_POST, 'nome');
+        $email = filter_input(INPUT_POST, 'email');
+        $message = 'Mensagem de '. $nome .' - '. $email.'
+                                <br>
+                                Mensagem: "'.nl2br(filter_input(INPUT_POST, 'message')).'"';
+        if(auxSendMail($nome, $email, $message)){
+            die( json_encode( array( "status" => true, "msg" => "Sua mensagem foi enviada!" ) ) );
+        }
+        else{
+            die( json_encode( array( "status" => false, "msg" => "Houve um erro, tente novamente mais tarde..." ) ) );
+        }
+    }
+
+
+
+    function auxSendMail($nome, $email, $message){
         require_once 'includes/phpmailer/PHPMailerAutoload.php';
             $mail = new PHPMailer;
             //$mail->SMTPDebug = 4;                         
@@ -46,17 +62,8 @@
             $mail->addAddress('contato@bitgift.com.br');     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Contato via site';
-            $mail->Body    = 'Mensagem de '. filter_input(INPUT_POST, 'nome').' - '. filter_input(INPUT_POST, 'email').'
-                                <br>
-                                Mensagem: "'.nl2br(filter_input(INPUT_POST, 'message')).'"';
+            $mail->Body    = $message;
 
-            if(!$mail->send()) {
-                //echo 'Message could not be sent.';
-                //echo 'Mailer Error: ' . $mail->ErrorInfo;
-                die( json_encode( array( "status" => false, "msg" => "Houve um erro, tente novamente mais tarde..." ) ) );
-
-            } else {
-                die( json_encode( array( "status" => true, "msg" => "Sua mensagem foi enviada!" ) ) );
-            }
+            return $mail->send();
     }
 ?>
