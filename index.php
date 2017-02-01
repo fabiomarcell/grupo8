@@ -10,10 +10,45 @@
 
 	</aside>
 
-	<div id="cupons" class="res">
-	    <div class="centro">
+	<div id="cupons" >
+	    <div class="centro res">
 	      <h3>Cupons Disponíveis</h3>
-	      	<!--Stuff-->
+	      <div class="cupom">
+		<img src="img/netflix.jpg"/>
+		<h4>Nome do cupom</h4>
+		<p>Texto explicativo do cupom. Bla bla bla.</p>
+		<p class="preco">R$ 20,00</p>
+	      </div>
+	      <div class="cupom">
+		<img src="img/netflix.jpg"/>
+		<h4>Nome do cupom</h4>
+		<p>Texto explicativo do cupom. Bla bla bla.</p>
+		<p class="preco">R$ 20,00</p>
+	      </div>
+	      <div class="cupom">
+		<img src="img/netflix.jpg"/>
+		<h4>Nome do cupom</h4>
+		<p>Texto explicativo do cupom. Bla bla bla.</p>
+		<p class="preco">R$ 20,00</p>
+	      </div>
+	      <div class="cupom">
+		<img src="img/netflix.jpg"/>
+		<h4>Nome do cupom</h4>
+		<p>Texto explicativo do cupom. Bla bla bla.</p>
+		<p class="preco">R$ 20,00</p>
+	      </div>
+	      <div class="cupom">
+		<img src="img/netflix.jpg"/>
+		<h4>Nome do cupom</h4>
+		<p>Texto explicativo do cupom. Bla bla bla.</p>
+		<p class="preco">R$ 20,00</p>
+	      </div>
+	      <div class="cupom">
+		<img src="img/netflix.jpg"/>
+		<h4>Nome do cupom</h4>
+		<p>Texto explicativo do cupom. Bla bla bla.</p>
+		<p class="preco">R$ 20,00</p>
+	      </div>
 	      <div class="clear"></div>
 	    </div>
 	  </div>
