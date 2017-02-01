@@ -16,7 +16,7 @@
 	      <!--Stuff-->
 	    </div>
 	    <div class="centro">
-			<p><button type="button" id="nestPage" class="btn btn-primary btn-outline with-arrow">Carregar Mais!</button></p>
+			<p><button type="button" id="nextPage" class="btn btn-primary btn-outline with-arrow">Carregar Mais!</button></p>
 		</div>
 
 	  </div>
