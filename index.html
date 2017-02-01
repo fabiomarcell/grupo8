@@ -318,6 +318,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
                             processData: true,
                             success: function (data) {
                                 if (data.results !== "") {
+                                	console.log(data);
                                     $("#res").append(data.results);
                                     setTimeout(function () {
                                         if (data.totalItens < 6) {
