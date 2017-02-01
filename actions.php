@@ -30,4 +30,33 @@
         }
         die( json_encode( array( "results" => $html, "pg" => $pg, "totalItens" => count( $registros ) ) ) );
     }
+    else if( $exec == 'sendMailContato'){
+        require_once 'includes/phpmailer/PHPMailerAutoload.php';
+            $mail = new PHPMailer;
+            $mail->SMTPDebug = 4;                         
+            $mail->isSMTP();                                     
+            $mail->Host = 'smtp.zoho.com'; 
+            $mail->SMTPAuth = true;                   
+            $mail->Username   = "contato@bitgift.com.br"; 
+            $mail->Password   = "grupo!@#8!!!";
+            $mail->SMTPSecure = 'ssl';                          
+            $mail->Port = 465;
+
+            $mail->From = filter_input(INPUT_POST, 'nome');
+            $mail->FromName = filter_input(INPUT_POST, 'nome');
+            $mail->addAddress('fabio.marcell@outlook.com');     // Add a recipient              // Name is optional
+            $mail->isHTML(true);                                  // Set email format to HTML
+            $mail->Subject = 'Here is the subject';
+            $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+            $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+
+            if(!$mail->send()) {
+                echo 'Message could not be sent.';
+                echo 'Mailer Error: ' . $mail->ErrorInfo;
+                die( json_encode( array( "status" => false, "msg" => $mail->ErrorInfo ) ) );
+
+            } else {
+                die( json_encode( array( "status" => true, "msg" => "OK" ) ) );
+            }
+    }
 ?>

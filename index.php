@@ -147,9 +147,10 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 			<div class="col-md-12 text-center animate-box" data-animate-effect="fadeIn">
 				<h3>Contato</h3>
 				<p>Algum texto aqui</p>
-				<form id="formContato" action="" method="post">
+				<form id="formContato" action="" method="post" onsubmit="sendMailContato(); return false; ">
 					<input type="text" name="nome" id="nome" placeholder="Informe seu nome..." required class="form-control"> 
-					<input type="email" name="email" id="email" placeholder="Informe seu nome..." required class="form-control"> 
+					<input type="email" name="email" id="email" placeholder="Informe seu Email..." required class="form-control"> 
+					<input type="hidden" name="exec" id="exec" value="sendMailContato"> 
 					<textarea name="message" id="message" placeholder="Informe sua mensagem..." required class="form-control"></textarea>
 					<p><button type="submit" class="btn btn-primary btn-outline with-arrow">Enviar! <i class="icon-arrow-right"></i></button></p>
 				</form>
@@ -237,6 +238,20 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
                 }
             }
             getPagination(1);
+
+
+            function sendMailContato(){
+            	$.ajax({
+	                type: "POST",
+	                url: "actions.php",
+	                data: $("#formContato").serialize(),
+	                dataType: 'json',
+	                processData: true,
+	                success: function (data) {
+	                    console.log(data);
+	                }
+	            });
+            }
         </script>
 	
 	</body>
