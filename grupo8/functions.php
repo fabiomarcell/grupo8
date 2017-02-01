@@ -16,8 +16,8 @@
                         $pdo = new PDO( $dsn, $usuario, $senha, $opcoes );
                     }
                     catch ( PDOException $e ) {
-                        Echo "Ocorreu um erro, veja o log para maiores informações";
-                        exit;
+                        //Echo "Ocorreu um erro, veja o log para maiores informações";
+                        //exit;
                     }
 
                     /*usado na paginação*/
