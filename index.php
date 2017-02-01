@@ -198,8 +198,8 @@
 				bootbox.confirm({
 				    message: 	"Olá! Você precisa se identificar para prosseguir.<br>"+
 				    			"Assim que o procedimento for finalizado, nós iremos entrar em contato diretamente com você!<br><br>"+
-				    			"<input type='text' id='registerName' class='form-control'>"+
-				    			"<input type='email' id='registerEmail' class='form-control'>",
+				    			"<input type='text' id='registerName' class='form-control' placeholder='Informe seu nome'>"+
+				    			"<input type='email' id='registerEmail' class='form-control' placeholder='Informe seu E-mail'>",
 				    buttons: {
 				        confirm: {
 				            label: 'Enviar!',
@@ -224,14 +224,13 @@
 				                processData: true,
 				                success: function (data) {
 				                    console.log(data);
-
+                                	novoPedido(cupom);
 				                }
 				            });
 				    		//console.log('This was logged in the callback: ' + $("#registerName").val());	
 				    	}
 				    }
 				});
-            	novoPedido(cupom);
 
 			}
 		</script>
