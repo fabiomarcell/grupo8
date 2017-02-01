@@ -152,6 +152,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 					<input type="email" name="email" id="email" placeholder="Informe seu Email..." required class="form-control"> 
 					<input type="hidden" name="exec" id="exec" value="sendMailContato"> 
 					<textarea name="message" id="message" placeholder="Informe sua mensagem..." required class="form-control"></textarea>
+					<br>
 					<p><button type="submit" class="btn btn-primary btn-outline with-arrow">Enviar! <i class="icon-arrow-right"></i></button></p>
 					<span id="resContato"></span>
 				</form>
