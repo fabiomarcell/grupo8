@@ -61,9 +61,9 @@
 
       <p id="regras">Nós cobramos uma taxa mínima pela operação, de acordo com o valor do vale presente selecionado:</p>
 
-      <p id="regras">15% para o vale presente de $20</p>
-      <p id="regras">10% para o vale presente de $50</p>
-      <p id="regras">5% para o vale presente de $100</p>
+      <p id="regras">5% para o vale presente de $20</p>
+      <p id="regras">4% para o vale presente de $50</p>
+      <p id="regras">3% para o vale presente de $100</p>
 
        <p id="regras">Nós também recebemos uma comissão do site onde você efetuar sua compra, caso você use o link enviado para seu e-mail para acessar o site parceiro. E você não paga nada a mais por isso.</p>
     </div>
