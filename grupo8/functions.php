@@ -1038,7 +1038,7 @@
                             limit " . $itens . " offset " . $pg * $itens;
                     $results = array();
                     foreach ( $pdo->query( $sql ) as $row ) {
-                        $results[] = $row;
+                        $results[] = $row; 
                     }
                     return $results;
 
