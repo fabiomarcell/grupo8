@@ -66,7 +66,7 @@
         $cupom = gettblCupons($cupomID);
         $fields = array(
                     "pedidoTitulo" => "Compra do cliente " . $_SESSION['cliente']['clienteID'] . ": '".$cupom['cupomTitulo']."'",
-                    "pedidoStatus" => "Pendente",
+                    "pedidoStatus" => "0", //pendente
                     "cupomID" => $cupomID,
                     "clienteID" => $_SESSION['cliente']['clienteID'],
             );
