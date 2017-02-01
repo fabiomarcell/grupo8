@@ -62,7 +62,16 @@
         }
     }
     else if($exec == 'novoPedido'){
-        die(json_encode(var_dump($_SESSION, filter_input(INPUT_POST, 'cupom'))));
+        $cupomID = filter_input(INPUT_POST, 'cupom');
+        $cupom = gettblCupons($cupomID);
+        $fields = array(
+                    "pedidoTitulo" => "Compra do cliente " . $_SESSION['cliente']['clienteID'] . ": '".$cupom['cupomTitulo']."'",
+                    "pedidoStatus" => "Pendente",
+                    "cupomID" => $cupomID,
+                    "clienteID" => $_SESSION['cliente']['clienteID'],
+            );
+        
+        die(json_encode(inserttblPedido( $fields )));
     }
     
 
