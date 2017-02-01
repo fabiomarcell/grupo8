@@ -12,7 +12,7 @@
 
 	<div id="cupons" >
 	    <div class="centro res">
-	      <h3>Cupons Disponíveis</h3>
+	    <h3>Vale Presentes Disponíveis</h3>
 	      <!--Stuff-->
 	    </div>
 	    <div class="centro">
