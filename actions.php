@@ -43,8 +43,23 @@
             die( json_encode( array( "status" => false, "msg" => "Houve um erro, tente novamente mais tarde..." ) ) );
         }
     }
+    else if($exec == 'checkSession'){
+        if($_SESSION['cliente']['clienteNome'] != ''){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 
 
+
+
+
+
+
+
+    /*********************/
 
     function auxSendMail($nome, $email, $message){
         require_once 'includes/phpmailer/PHPMailerAutoload.php';

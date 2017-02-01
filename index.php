@@ -241,8 +241,8 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
                 }
             }
             getPagination(1);
-
-
+        </script>
+        <script>
             function sendMailContato(){
                 $("#resContato").html("Aguarde...");
             	$.ajax({
@@ -259,7 +259,49 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 	            });
             }
         </script>
-	
+		<script>
+			function checkSession(){
+				$.ajax({
+	                type: "POST",
+	                url: "actions.php",
+	                data: {
+	                	exec: 'checkSession'
+	                },
+	                dataType: 'json',
+	                processData: true,
+	                success: function (data) {
+	                    console.log(data);
+	                    if(!data.status){
+	                    	callRegister();
+	                    }
+	                    else{
+	                    	novoPedido();
+	                    }
+	                }
+	            });
+			}
+		</script>	
+		<script>
+			function callRegister(){
+				bootbox.confirm({
+				    message: "This is a confirm with custom button text and color! Do you like it?<br>
+				    			<input type='text'>",
+				    buttons: {
+				        confirm: {
+				            label: 'Yes',
+				            className: 'btn-success'
+				        },
+				        cancel: {
+				            label: 'No',
+				            className: 'btn-danger'
+				        }
+				    },
+				    callback: function (result) {
+				        console.log('This was logged in the callback: ' + result);
+				    }
+				});
+			}
+		</script>
 	</body>
 </html>
 
