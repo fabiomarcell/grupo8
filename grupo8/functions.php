@@ -934,7 +934,7 @@
                     C.clienteEmail,
                     C.clienteDescricao,
                     C.clienteValidade from tblCliente C
-                            where C.clienteNome = :clienteNome and C.clienteEmail = :clienteEmail";
+                            where C.clienteNome = '".$nome."' and C.clienteEmail = '".$email."'";
                         $query = $pdo->prepare( $sql );
 
                         $query->bindParam( ":clienteNome", $nome );
