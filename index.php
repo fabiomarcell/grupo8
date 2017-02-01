@@ -148,9 +148,9 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 				<h3>Contato</h3>
 				<p>Algum texto aqui</p>
 				<form id="formContato" action="" method="post">
-					<input type="text" name="nome" id="nome" placeholder="Informe seu nome..." required> 
-					<input type="email" name="email" id="email" placeholder="Informe seu nome..." required> 
-					<textarea name="message" id="message" placeholder="Informe sua mensagem..." required></textarea>
+					<input type="text" name="nome" id="nome" placeholder="Informe seu nome..." required class="form-control"> 
+					<input type="email" name="email" id="email" placeholder="Informe seu nome..." required class="form-control"> 
+					<textarea name="message" id="message" placeholder="Informe sua mensagem..." required class="form-control"></textarea>
 					<p><button type="submit" class="btn btn-primary btn-outline with-arrow">Enviar! <i class="icon-arrow-right"></i></button></p>
 				</form>
 			</div>
