@@ -1,8 +1,9 @@
 <?php include('header.php');?>
 	
 
-	<aside id="fh5co-hero" clsas="js-fullheight">
-		<div class="flexslider js-fullheight">
+	<!--<aside id="fh5co-hero" clsas="js-fullheight">-->
+	<aside>
+		<!--<div class="flexslider js-fullheight">
 			<ul class="slides">
 		   	<li style="background-image: url(images/slide_1.jpg);">
 		   		<div class="container">
@@ -71,6 +72,8 @@
 		   	
 		  	</ul>
 	  	</div>
+
+	  -->
 	</aside>
 	<div id="best-deal">
 		<div class="container">
@@ -86,7 +89,7 @@
 
 
 			</div>
-			<p style="width:100%; text-align:center;"><a href="javascript:void(0);" id="nextPage" class="btn btn-primary btn-outline with-arrow">Get started <i class="icon-arrow-right"></i></a></p>
+			<p style="width:100%; text-align:center;"><a href="javascript:void(0);" id="nextPage" class="btn btn-primary btn-outline with-arrow">Carregar Mais! <i class="icon-arrow-right"></i></a></p>
 		</div>
 	</div>
 
