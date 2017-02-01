@@ -11,7 +11,7 @@
         $pg += 1;
         $html = "";
         foreach ( $registros as $registro ) {
-            $html .= '<div class="col-md-4 item-block animate-box" data-animate-effect="fadeIn">
+            $html .= '<div class="col-md-4">
                     <div class="fh5co-property">
                         <figure>
                             <img src="grupo8/'.$registro['foto'].'" alt="" class="img-responsive">
