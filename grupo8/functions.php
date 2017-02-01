@@ -1026,6 +1026,8 @@
                 } 
 
                 function getCuponsSite($pg, $itens = 6){
+                    global $pdo, $img;
+
                     $pg -=1;
                     $sql = "select C.cupomID,
                             C.cupomTitulo,
@@ -1035,7 +1037,8 @@
                             C.cupomValorCobrar,
                             (concat('".$img."tblCupons/',C.cupomImagem)) as foto,
                             C.cupomImagem from tblCupons C
-                            limit " . $itens . " offset " . $pg * $itens;
+                            limit " . $itens . " offset " . ($pg * $itens);
+
                     $results = array();
                     foreach ( $pdo->query( $sql ) as $row ) {
                         $results[] = $row; 
