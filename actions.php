@@ -75,6 +75,23 @@
         if($novoPedido['status']){
             $message = "Novo pedido gerado pelo cliente ".$_SESSION['cliente']['clienteNome']." - ".$_SESSION['cliente']['clienteEmail'].": '".$cupom['cupomTitulo']."'";
             auxSendMail('', 'contato@bitgift.com.br', $message, 'Novo Pedido!!');
+
+            $message = "Obrigado por ter escolhido a BitGift para trocar seus Bitcoins por cartões de presente. É uma grande satisfação ter você como usuário.<br>
+            Abaixo estão os dados da carteira para onde você deverá transferir os Bitcoins. Não digite os caracteres. Corte e cole o link para executar a transferência ou utilize o leitor de QR Code para pagamento pelo aplicativo no seu celular.<br>
+
+            https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V
+            <br>
+            Resumo do seu pedido:<br>
+            Cupom selecionado: ".$cupom['cupomTitulo']." 
+            Valor Do Cupom: R$ ".$cupom['cupomValorExibir']." <br>
+            Valor Total da transferência: R$ ".$cupom['cupomValorCobrar']." <br>
+
+            O seu cartão de presente selecionado será automaticamente enviado assim que identificarmos o crédito. Entre em contato conosco no telefone 11 99988 8777 ou pelo e-mail <contato@bitgift.com.br> caso tenha qualquer dúvida.<br>
+            Grande abraço,<br>
+            BitGift";
+
+            auxSendMail('', $_SESSION['cliente']['clienteEmail'], $message, 'Seu pedido BitGift!');
+
         }
         die(json_encode($novoPedido));
     }
