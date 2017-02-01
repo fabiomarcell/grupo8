@@ -198,8 +198,9 @@
 				bootbox.confirm({
 				    message: 	"Olá! Você precisa se identificar para prosseguir.<br>"+
 				    			"Assim que o procedimento for finalizado, nós iremos entrar em contato diretamente com você!<br><br>"+
-				    			"<input type='text' id='registerName' class='form-control' placeholder='Informe seu nome'>"+
-				    			"<input type='email' id='registerEmail' class='form-control' placeholder='Informe seu E-mail'>",
+				    			"<input type='text' id='registerName' class='form-control' placeholder='Informe seu nome*'>"+
+				    			"<input type='email' id='registerEmail' class='form-control' placeholder='Informe seu E-mail*'>",
+				    			"<input type='telefone' id='registerTelefone' class='form-control' placeholder='Informe seu Telefone'>",
 				    buttons: {
 				        confirm: {
 				            label: 'Enviar!',
@@ -219,6 +220,7 @@
 				                	exec: 'verifCliente',
 				                	nome: $("#registerName").val(),
 				                	email: $("#registerEmail").val(),
+				                	telefone: $("#registerTelefone").val(),
 				                },
 				                dataType: 'json',
 				                processData: true,

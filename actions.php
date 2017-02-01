@@ -54,6 +54,7 @@
         else{
             $novoCliente = array( "clienteNome" => filter_input(INPUT_POST, 'nome'),
                                     "clienteEmail" => filter_input(INPUT_POST, 'email'),
+                                    "clienteTelefone" => filter_input(INPUT_POST, 'telefone'),
                                     "clienteDescrição" => "Cadastrado no site em ".date('d/m/Y H:i:s'),
                                      );
             $returnCliente = inserttblCliente(  $novoCliente);
