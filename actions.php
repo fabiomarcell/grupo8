@@ -66,13 +66,17 @@
         $cupomID = filter_input(INPUT_POST, 'cupom');
         $cupom = gettblCupons($cupomID);
         $fields = array(
-                    "pedidoTitulo" => "Compra do cliente " . $_SESSION['cliente']['clienteID'] . ": '".$cupom['cupomTitulo']."'",
+                    "pedidoTitulo" => "Compra do cliente " . $_SESSION['cliente']['clienteNome'] . ": '".$cupom['cupomTitulo']."'",
                     "pedidoStatus" => "0", //pendente
                     "cupomID" => $cupomID,
                     "clienteID" => $_SESSION['cliente']['clienteID'],
             );
-        
-        die(json_encode(inserttblPedido( $fields )));
+        $novoPedido = inserttblPedido( $fields );
+        if($novoPedido['status']){
+            $message = "Novo pedido gerado pelo cliente ".$_SESSION['cliente']['clienteNome']." - ".$_SESSION['cliente']['clienteEmail'].": '".$cupom['cupomTitulo']."'";
+            auxSendMail('', '', $message, 'Novo Pedido!!');
+        }
+        die(json_encode($novoPedido));
     }
     
 
@@ -85,7 +89,7 @@
 
     /*********************/
 
-    function auxSendMail($nome, $email, $message){
+    function auxSendMail($nome, $email, $message, $assunto = "Contato via site"){
         require_once 'includes/phpmailer/PHPMailerAutoload.php';
             $mail = new PHPMailer;
             //$mail->SMTPDebug = 4;                         
@@ -100,7 +104,7 @@
             $mail->setFrom("contato@bitgift.com.br","Contato .");
             $mail->addAddress('contato@bitgift.com.br');     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = 'Contato via site';
+            $mail->Subject = $assunto;
             $mail->Body    = $message;
 
             return $mail->send();
