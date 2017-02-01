@@ -42,8 +42,6 @@
             $mail->SMTPSecure = 'ssl';                          
             $mail->Port = 465;
 
-            $mail->From = filter_input(INPUT_POST, 'nome');
-            $mail->FromName = filter_input(INPUT_POST, 'nome');
             $mail->addAddress('fabio.marcell@outlook.com');     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = 'Here is the subject';
