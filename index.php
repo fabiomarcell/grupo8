@@ -95,7 +95,7 @@
 
 
 
-	<div class="fh5co-section-with-image">
+	<div class="fh5co-section-with-image" id="sobre">
 		
 		<img src="images/image_1.jpg" alt="" class="img-responsive" style="width:100%;">
 		<div class="fh5co-box animate-box" style="left:10%;">
@@ -108,7 +108,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 		
 	</div>
 	
-	<div class="fh5co-section-with-image">
+	<div class="fh5co-section-with-image" id="comoFunciona">
 		
 		<img src="images/image_1.jpg" alt="" class="img-responsive" style="width:100%;">
 		<div class="fh5co-box animate-box">
@@ -141,7 +141,7 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 
 	
 
-	<div class="fh5co-cta" style="background-image: url(images/image_1.jpg);">
+	<div class="fh5co-cta" style="background-image: url(images/image_1.jpg);" id="contato">
 		<!--<div class="overlay"></div>-->
 		<div class="container">
 			<div class="col-md-12 text-center animate-box" data-animate-effect="fadeIn">
