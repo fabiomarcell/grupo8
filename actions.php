@@ -12,7 +12,7 @@
         $html = "";
         foreach ( $registros as $registro ) {
             $html .= '<div class="cupom">
-                        <img src="grupo8/'.$registro['foto'].'"/>
+                        <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')"><img src="grupo8/'.$registro['foto'].'"/></a>
                         <h4>'.$registro['cupomTitulo'].'</h4>
                         <p>'.nl2br($registro['cupomDescricao']).'</p>
                         <p class="preco">R$ '. number_format($registro['cupomValorExibir'], 2, ',', '.').'</p>
