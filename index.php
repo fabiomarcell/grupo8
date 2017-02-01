@@ -142,11 +142,12 @@ Nossa proposta é tornar possíveis suas compras em lojas virtuais que ainda nã
 	
 
 	<div class="fh5co-cta" style="background-image: url(images/image_1.jpg);">
-		<div class="overlay"></div>
+		<!--<div class="overlay"></div>-->
 		<div class="container">
 			<div class="col-md-12 text-center animate-box" data-animate-effect="fadeIn">
-				<h3>We Try To Update The Site Everyday</h3>
-				<p><a href="#" class="btn btn-primary btn-outline with-arrow">Get started now! <i class="icon-arrow-right"></i></a></p>
+				<h3>Contato</h3>
+				<p>Algum texto aqui</p>
+				<p><button type="submit" class="btn btn-primary btn-outline with-arrow">Enviar! <i class="icon-arrow-right"></i></button></p>
 			</div>
 		</div>
 	</div>
