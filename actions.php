@@ -60,6 +60,9 @@
             $_SESSION['cliente']['clienteNome'] = $cliente[0];
         }
     }
+    else if($exec == 'novoPedido'){
+        die(json_encode(var_dump($_SESSION, filter_input(INPUT_POST, 'cupom'))));
+    }
     
 
 

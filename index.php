@@ -172,7 +172,7 @@
             }
         </script>
 		<script>
-			function checkSession(){
+			function checkSession(cupom){
 				$.ajax({
 	                type: "POST",
 	                url: "actions.php",
@@ -184,17 +184,17 @@
 	                success: function (data) {
 	                    console.log(data);
 	                    if(!data.status){
-	                    	callRegister();
+	                    	callRegister(cupom);
 	                    }
 	                    else{
-	                    	novoPedido();
+	                    	novoPedido(cupom);
 	                    }
 	                }
 	            });
 			}
 		</script>	
 		<script>
-			function callRegister(){
+			function callRegister(cupom){
 				bootbox.confirm({
 				    message: 	"Olá! Você precisa se identificar para prosseguir.<br>"+
 				    			"Assim que o procedimento for finalizado, nós iremos entrar em contato diretamente com você!<br><br>"+
@@ -224,6 +224,8 @@
 				                processData: true,
 				                success: function (data) {
 				                    console.log(data);
+        	                    	novoPedido(cupom);
+
 				                }
 				            });
 				    		//console.log('This was logged in the callback: ' + $("#registerName").val());	
@@ -231,6 +233,25 @@
 				    }
 				});
 			}
+		</script>
+
+		<script>
+			function novoPedido(cupom){
+				$.ajax({
+	                type: "POST",
+	                url: "actions.php",
+	                data: {
+	                	exec: 'novoPedido',
+	                	cupom: cupom
+	                },
+	                dataType: 'json',
+	                processData: true,
+	                success: function (data) {
+	                    console.log(data);
+	                }
+	            });
+			}
+
 		</script>
 	</body>
 </html>
