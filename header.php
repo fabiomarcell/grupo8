@@ -83,9 +83,9 @@
 	<img src="img/logo.png" width="121" height="46"/>
       </a>
       <ul> <!-- unordered list -->
-	<li><a href="#sobre" style="color:#CCC;">Sobre</a></li>
-	<li><a href="#funcionamento" style="color:#CCC;">Como Funciona?</a></li>
-	<li><a href="#contato" style="color:#CCC;">Contato</a></li>
+	<li><a href="#sobre" style="color:#FFF;">Sobre</a></li>
+	<li><a href="#funcionamento" style="color:#FFF;">Como Funciona?</a></li>
+	<li><a href="#contato" style="color:#FFF;">Contato</a></li>
       </ul>
     </div>
   </header>
