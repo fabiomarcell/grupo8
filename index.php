@@ -15,7 +15,7 @@
 	      <!--Stuff-->
 	    </div>
 	    <div class="centro">
-			<p><button type="button" id="nextPage" style="background-color: transparent; border: none;"><img src="img/enviar.png" style="width:150px;"></button></p>
+			<p><button type="button" id="nextPage" style="background-color: transparent; border: none;"><img src="img/carregar.png" style="width:150px;"></button></p>
 		</div>
 		<div class="clearfix">
 
