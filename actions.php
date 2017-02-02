@@ -95,7 +95,7 @@
         }
         die(json_encode($novoPedido));
     }
-    else{
+    /*else{
 
         $cupomID = 13;
         $cupom = gettblCupons($cupomID);
@@ -129,7 +129,7 @@
         }
         die(json_encode($novoPedido));
 
-    }
+    }*/
     
 
 
@@ -146,7 +146,7 @@
             $mail = new PHPMailer;
             $mail->CharSet = 'UTF-8';
 
-            $mail->SMTPDebug = 4;                         
+            //$mail->SMTPDebug = 4;                         
             $mail->isSMTP();                                     
             $mail->Host = 'smtp.zoho.com'; 
             $mail->SMTPAuth = true;                   
