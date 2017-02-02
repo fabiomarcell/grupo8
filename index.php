@@ -53,7 +53,7 @@
       </div>
        <div class="explicacao">
   <img src="img/5.png"/>
-  <p>Agora é só escolher quem você vai presentar, vão ter achar "o cara" <strong>/o/</strong></p>
+  <p>Agora é só escolher quem presentar, você vai ser "o cara" <strong>/o/</strong></p>
       </div>
       <div id="regras"> 
             <h4>E como a BitGift ganha com isso?</h4>
