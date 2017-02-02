@@ -96,8 +96,10 @@
 				<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
 			<!-- Vitrine Inteligente Lomadee -->
 		</section>
-	    <a href="https://www.facebook.com/BitGift-177380176081273/?" target="_blank" style="margin-left:25px;">facebook</a>
-	    BitGift - Aqui seus Bitcoins viram presentes (simbolo do copyright) - 2017 | contato@bitgift.com.br - (11) 983054953
+		<section style="background-color:#CCC; text-align:center;" >
+	    	<a href="https://www.facebook.com/BitGift-177380176081273/?" target="_blank" style="margin-left:25px;">facebook</a>
+	    	BitGift - Aqui seus Bitcoins viram presentes (simbolo do copyright) - 2017 | contato@bitgift.com.br - (11) 983054953
+    	</section>
   </footer>
 	</div>
 	
