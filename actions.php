@@ -150,8 +150,8 @@
             $mail->isSMTP();                                     
             $mail->Host = 'smtp.zoho.com'; 
             $mail->SMTPAuth = true;                   
-            $mail->Username   = "contato@bitgift.com.br"; 
-            $mail->Password   = "grupo!@#8!!!";
+            $mail->Username   = "fabio@bitgift.com.br"; 
+            $mail->Password   = "2684fbi6";
             $mail->SMTPSecure = 'tls';                          
             $mail->Port = 587;
 
