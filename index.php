@@ -97,7 +97,7 @@
 			<!-- Vitrine Inteligente Lomadee -->
 		</section>
 		<section style="background-color:#333333; text-align:center; color:#FFF;" >
-	    	BitGift - Aqui seus Bitcoins viram presentes (simbolo do copyright) - 2017 | contato@bitgift.com.br - (11) 983054953
+	    	BitGift - Aqui seus Bitcoins viram presentes © - 2017 | contato@bitgift.com.br - (11) 983054953
 	    	<section style="text-align:center;">
 	    		<a href="https://www.facebook.com/BitGift-177380176081273/?" target="_blank" style="margin-left:25px; color:#FFF;"><strong>facebook</sontrg></a>
 	    	</section>
