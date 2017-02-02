@@ -155,7 +155,7 @@
             $mail->SMTPSecure = 'tls';                          
             $mail->Port = 587;
 
-            $mail->setFrom("contato@bitgift.com.br","Contato .");
+            $mail->setFrom("fabio@bitgift.com.br","Fabio Marcell");
             $mail->addAddress($email);     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = $assunto;
