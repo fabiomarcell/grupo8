@@ -190,6 +190,7 @@
         </script>
 		<script>
 			function checkSession(cupom){
+				$(".res").fadeTo("slow", 0.3);
 				$.ajax({
 	                type: "POST",
 	                url: "actions.php",
@@ -266,6 +267,7 @@
 	                dataType: 'json',
 	                processData: true,
 	                success: function (data) {
+                        $(".res").fadeTo("slow", 1);
 	                    console.log(data);
 	                    if(data.status){
 	                    	bootbox.alert({
