@@ -17,7 +17,7 @@
                         <p>'.nl2br($registro['cupomDescricao']).'</p>
                         <p class="preco">R$ '. number_format($registro['cupomValorExibir'], 2, ',', '.').'</p>
                         <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')" class="tag">'.$registro['cupomOrigem'].'</a>
-                        <img src="img/comprar.png" onclick="checkSession('.$registro['cupomID'].')" style="width:100%; cursor:pointer;" >
+                        <img src="img/comprar.png" onclick="checkSession('.$registro['cupomID'].')" style="width: 80%; cursor: pointer; margin-bottom: 20px;" >
                       </div>';
         }
         die( json_encode( array( "results" => $html, "pg" => $pg, "totalItens" => count( $registros ) ) ) );
