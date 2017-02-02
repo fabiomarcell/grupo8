@@ -3,8 +3,7 @@
 
 	  <div id="banner">
 	    <div class="centro">
-	      <h2>A maneira mais fácil de comprar presentes
-		com Bitcoins!</h2>
+	      <h2>Aqui seus Bitcoins viram presentes!</h2>
 	    </div>
 	  </div>
 
