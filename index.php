@@ -84,6 +84,10 @@
     </div>
   </div>
 
+	<!-- Vitrine Inteligente Lomadee -->
+	<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
+<!-- Vitrine Inteligente Lomadee -->
+
   <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5892947a5dc9c102"></script> 
 
   <footer>
@@ -266,9 +270,7 @@
 			}
 
 		</script>
-		<!-- Vitrine Inteligente Lomadee -->
-			<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
-		<!-- Vitrine Inteligente Lomadee -->
+
 	</body>
 </html>
 
