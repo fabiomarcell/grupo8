@@ -84,7 +84,7 @@
     </div>
   </div>
 
-  	<section>
+  	<section style="width:75%; display:block; margin:0 auto;">
 		<!-- Vitrine Inteligente Lomadee -->
 			<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
 		<!-- Vitrine Inteligente Lomadee -->
