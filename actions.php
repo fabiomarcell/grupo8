@@ -150,12 +150,12 @@
             $mail->isSMTP();                                     
             $mail->Host = 'smtp.zoho.com'; 
             $mail->SMTPAuth = true;                   
-            $mail->Username   = "fabio@bitgift.com.br"; 
-            $mail->Password   = "2684fbi6";
+            $mail->Username   = "contato@bitgift.com.br"; 
+            $mail->Password   = "grupo!@#8!!!";
             $mail->SMTPSecure = 'tls';                          
             $mail->Port = 587;
 
-            $mail->setFrom("fabio@bitgift.com.br","Fabio Marcell");
+            $mail->setFrom("contato@bitgift.com.br","Contato .");
             $mail->addAddress($email);     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = $assunto;
