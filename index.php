@@ -40,7 +40,7 @@
 	<p>Escolha o Vale Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
   </div>
       <div class="explicacao">
-  <img src="img/3.png"/>
+  <img src="img/2.png"/>
   <p>Selecione o Valor de Bitcoin que deseja transformar em Vale-Presente!</p>
       </div>
       <div class="explicacao">
@@ -267,7 +267,7 @@
 
 		</script>
 		<!-- Vitrine Inteligente Lomadee -->
-		<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
+			<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
 		<!-- Vitrine Inteligente Lomadee -->
 	</body>
 </html>
