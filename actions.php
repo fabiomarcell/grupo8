@@ -90,7 +90,7 @@
             Você também pode usar o leitor de QR Code para pagamento pelo aplicativo no seu celular.<br><br>
 
             Para ter certeza que você está enviando para a carteira correta, disponibilizados o link dela aqui: <a href='https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V '>https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V </a><br><br>
-            
+
             Após realizar sua transfêrencia por favor no envie o comprovante da mesma aqui mesmo por este e-mail para possamos validá-lo e entregar para você seu Vale-Presente. Normalmente este processo de confirmação e entrega de seu Vale-Presente pode levar até 24h mas fique tranquilo pois estamos aqui de prontidão para atendê-lo a qualquer dúvida. Caso ache necessário você também pode entrar em contato conos pelo Whatsapp no (11) 983054953.<br><br>
             Att,<br><br>
             Equipe BitGift";
@@ -153,14 +153,14 @@
 
             //$mail->SMTPDebug = 4;                         
             $mail->isSMTP();                                     
-            $mail->Host = 'smtp.zoho.com'; 
+            $mail->Host = 'smtp.bitgift.com.br'; 
             $mail->SMTPAuth = true;                   
             $mail->Username   = "contato@bitgift.com.br"; 
-            $mail->Password   = "grupo!@#8!!!";
+            $mail->Password   = "grupo8!!!";
             $mail->SMTPSecure = 'tls';                          
             $mail->Port = 587;
 
-            $mail->setFrom("contato@bitgift.com.br","Contato .");
+            $mail->setFrom("contato@bitgift.com.br","Contato");
             $mail->addAddress($email);     // Add a recipient              // Name is optional
             $mail->isHTML(true);                                  // Set email format to HTML
             $mail->Subject = $assunto;
