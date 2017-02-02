@@ -85,7 +85,7 @@
       <ul> <!-- unordered list -->
 	<li><a href="#sobre" style="color:#FFF;">Sobre</a></li>
 	<li><a href="#funcionamento" style="color:#FFF;">Como Funciona?</a></li>
-	<li><a href="#contato" style="color:#FFF;"><img src="img/contato.png"></a></li>
+	<li><a href="#contato" style="color:#FFF;"><img src="img/contato.png" style="width: 150px; margin-top: -10px;"></a></li>
       </ul>
     </div>
   </header>
