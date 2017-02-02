@@ -90,7 +90,7 @@
             Grande abraço,<br>
             BitGift";
 
-            auxSendMail('', $_SESSION['cliente']['clienteEmail'], $message, 'Seu pedido BitGift!');
+            auxSendMail('', $_SESSION['cliente']['clienteEmail'], $message, 'BitGift - Complete sua compra!');
 
         }
         die(json_encode($novoPedido));
