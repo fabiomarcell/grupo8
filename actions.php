@@ -161,7 +161,7 @@
             $mail->SMTPAuth = true;                   
             $mail->Username   = "contato@bitgift.com.br"; 
             $mail->Password   = "grupo8!!!";
-            $mail->SMTPSecure = 'tls';                          
+            //$mail->SMTPSecure = 'tls';                          
             $mail->Port = 587;
 
             $mail->setFrom("contato@bitgift.com.br","Contato");
