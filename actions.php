@@ -18,7 +18,7 @@
                         <p class="preco">R$ '. number_format($registro['cupomValorExibir'], 2, ',', '.').'</p>
                         <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')" class="tag">'.$registro['cupomOrigem'].'</a>
                         <div class="centro">
-                            <p><button type="button" onclick="checkSession('.$registro['cupomID'].')" class="btn btn-primary btn-outline with-arrow">Carregar Mais!</button></p>
+                            <p><button type="button" onclick="checkSession('.$registro['cupomID'].')" class="btn btn-primary">Carregar Mais!</button></p>
                         </div>
                       </div>';
         }
