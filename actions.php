@@ -157,7 +157,7 @@
 
             $mail->SMTPDebug = 4;                         
             $mail->isSMTP();                                     
-            $mail->Host = 'smtp.bitgift.com.br'; 
+            $mail->Host = 'smtp.uhserver.com'; 
             $mail->SMTPAuth = true;                   
             $mail->Username   = "contato@bitgift.com.br"; 
             $mail->Password   = "grupo8!!!";
