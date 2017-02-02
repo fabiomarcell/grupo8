@@ -155,7 +155,7 @@
             $mail = new PHPMailer;
             $mail->CharSet = 'UTF-8';
 
-            $mail->SMTPDebug = 4;                         
+            //$mail->SMTPDebug = 4;                         
             $mail->isSMTP();                                     
             $mail->Host = 'smtp.uhserver.com'; 
             $mail->SMTPAuth = true;                   
