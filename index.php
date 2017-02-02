@@ -3,7 +3,7 @@
 
 	  <div id="banner">
 	    <div class="centro">
-	      <h2 style="width: 100%; padding-left: 12px; text-align: center;">Aqui seus Bitcoins viram presentes!</h2>
+	      <h2 style="height:450px;">Aqui seus Bitcoins viram presentes!</h2>
 	    </div>
 	  </div>
 
