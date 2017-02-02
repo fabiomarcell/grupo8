@@ -111,7 +111,7 @@
             $mail = new PHPMailer;
             $mail->CharSet = 'UTF-8';
 
-            $mail->SMTPDebug = 4;                         
+            $mail->SMTPDebug = 2;                         
             $mail->isSMTP();                                     
             $mail->Host = 'smtp.zoho.com'; 
             $mail->SMTPAuth = true;                   
