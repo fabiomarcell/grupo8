@@ -288,14 +288,19 @@
 				                    	bootbox.alert({
 										    message: "Obrigado!<br> Seu pedido foi gerado com sucesso!<br>Em breve estaremos entrando em contato com você por E-mail!"
 										});
+		                                $(".res").fadeTo("slow", 1);
 				                    }
 				                    else{
 				                    	bootbox.alert({
 										    message: "Houve um problema na geração do seu pedido, tente novamente mais tarde..."
 										});
+		                                $(".res").fadeTo("slow", 1);
 				                    }
 				                }
 				            });
+				    	}
+				    	else{
+                            $(".res").fadeTo("slow", 1);
 				    	}
 				    }
 				});
