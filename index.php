@@ -56,8 +56,9 @@
   <p>Agora é só escolher quem presentar, você vai ser "o cara" <strong>/o/</strong></p>
       </div>
       <div id="regras"> 
-            <h4>E como a BitGift ganha com isso?</h4>
-
+      	<div class="centro">
+            <h3>E como a BitGift ganha com isso?</h3>
+        </div>
       <p>Nós cobramos uma taxa mínima pela operação, de acordo com o valor do vale presente selecionado:</p>
   <ul>
       <li> 10% para o vale presente de R$20</li>
