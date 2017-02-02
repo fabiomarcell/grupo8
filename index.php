@@ -257,30 +257,48 @@
 
 		<script>
 			function novoPedido(cupom){
-				$.ajax({
-	                type: "POST",
-	                url: "actions.php",
-	                data: {
-	                	exec: 'novoPedido',
-	                	cupom: cupom
-	                },
-	                dataType: 'json',
-	                processData: true,
-	                success: function (data) {
-                        $(".res").fadeTo("slow", 1);
-	                    console.log(data);
-	                    if(data.status){
-	                    	bootbox.alert({
-							    message: "Obrigado!<br> Seu pedido foi gerado com sucesso!<br>Em breve estaremos entrando em contato com você por E-mail!"
-							});
-	                    }
-	                    else{
-	                    	bootbox.alert({
-							    message: "Houve um problema na geração do seu pedido, tente novamente mais tarde..."
-							});
-	                    }
-	                }
-	            });
+
+				bootbox.confirm({
+				    message: 	"Deseja realizar um novo pedido?",
+				    buttons: {
+				        confirm: {
+				            label: 'Sim!',
+				            className: 'btn-success'
+				        },
+				        cancel: {
+				            label: 'Não...',
+				            className: 'btn-danger'
+				        }
+				    },
+				    callback: function (result) {
+				    	if(result){
+				    		$.ajax({
+				                type: "POST",
+				                url: "actions.php",
+				                data: {
+				                	exec: 'novoPedido',
+				                	cupom: cupom
+				                },
+				                dataType: 'json',
+				                processData: true,
+				                success: function (data) {
+			                        $(".res").fadeTo("slow", 1);
+				                    console.log(data);
+				                    if(data.status){
+				                    	bootbox.alert({
+										    message: "Obrigado!<br> Seu pedido foi gerado com sucesso!<br>Em breve estaremos entrando em contato com você por E-mail!"
+										});
+				                    }
+				                    else{
+				                    	bootbox.alert({
+										    message: "Houve um problema na geração do seu pedido, tente novamente mais tarde..."
+										});
+				                    }
+				                }
+				            });
+				    	}
+				    }
+				});
 			}
 
 		</script>
