@@ -117,8 +117,8 @@
             $mail->SMTPAuth = true;                   
             $mail->Username   = "contato@bitgift.com.br"; 
             $mail->Password   = "grupo!@#8!!!";
-            $mail->SMTPSecure = 'tls';                          
-            $mail->Port = 587;
+            $mail->SMTPSecure = 'ssl';                          
+            $mail->Port = 465;
 
             $mail->setFrom("contato@bitgift.com.br","Contato .");
             $mail->addAddress($email);     // Add a recipient              // Name is optional
