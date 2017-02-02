@@ -23,27 +23,27 @@
 
 	  </div>
 
-  <div id="funcionamento">
+  <div id="funcionamento" class="fundo-verde">
     <div class="centro">
       <h3>Como funciona?</h3>
       <div class="explicacao">
-	<img src="img/1.png"/>
+	<img src="img/1b.png"/>
 	<p>Escolha o Vale Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
   </div>
       <div class="explicacao">
-  <img src="img/2.png"/>
+  <img src="img/2b.png"/>
   <p>Selecione o Valor de Bitcoin que deseja transformar em Vale-Presente!</p>
       </div>
       <div class="explicacao">
-	<img src="img/3.png"/>
+	<img src="img/3b.png"/>
 	<p>Efetue sua transferência para nossa carteira de Bitcoin.</p>
       </div>
       <div class="explicacao">
-	<img src="img/4.png"/>
+	<img src="img/4b.png"/>
 	<p>Receba seu Vale Presente virtual direto no seu e-mail!</p>
       </div>
        <div class="explicacao">
-  <img src="img/5.png"/>
+  <img src="img/5b.png"/>
   <p>Agora é só escolher quem presentar, você vai ser "o cara" <strong>/o/</strong></p>
       </div>
       <div id="regras"> 
@@ -63,7 +63,7 @@
 
 
 
-	<div id="sobre" class="fundo-verde">
+	<div id="sobre" >
 	    <div class="centro">
 	      <h3>Sobre</h3>
 	      <p>A Bitgift surgiu com o propósito de facilitar suas compras em e-commerces usando bitcoins. Você pode adquirir um vale presente de e-commerces selecionados em nosso site, pagar em bitcoins e usá-lo normalmente na loja virtual. Sem necessidade de efetuar transação com sua corretora, e pagando menos por isso.</p>
