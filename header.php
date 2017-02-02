@@ -7,17 +7,17 @@
 	<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Bit Gift</title>
+	<title> Home | A maneira mais fácil de comprar presentes com Bitcoins</title>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="" />
-	<meta name="keywords" content="" />
+	<meta name="description" content="Troque Bitcoin por vale presentes.">
+	<meta name="keywords" content="Bitcoin, Troque seu Bitcoin, vale presentes com Bitcoin" />
 	
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
+	<meta property="og:title" content="A maneira mais fácil de comprar presentes com Bitcoins"/>
+	<meta property="og:url" content="bitgift.com.br"/>
+	<meta property="og:site_name" content="BitGift"/>
+	<meta property="og:description" content="Troque Bitcoin por vale presentes."/>
+	<meta name="twitter:title" content="A maneira mais fácil de comprar presentes com Bitcoins" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
