@@ -34,7 +34,7 @@
 
   <div id="funcionamento">
     <div class="centro">
-      <h3>E como a BitGift ganha com isso?</h3>
+      <h3>Como funciona?</h3>
       <div class="explicacao">
 	<img src="img/1.png"/>
 	<p>Escolha o Vale Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
@@ -56,7 +56,7 @@
   <p>Agora é só escolher quem você vai presentar, vão ter achar "o cara" <strong>/o/</strong></p>
       </div>
       <div id="regras"> 
-            <h4>Como funciona?</h4>
+            <h4>E como a BitGift ganha com isso?</h4>
 
       <p>Nós cobramos uma taxa mínima pela operação, de acordo com o valor do vale presente selecionado:</p>
   <ul>
