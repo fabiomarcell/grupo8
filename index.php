@@ -86,7 +86,7 @@
   </div>
 
   <footer>
-    <a href="https://www.facebook.com/BitGift-177380176081273/?" target="_blank">facebook</a>
+    <a href="https://www.facebook.com/BitGift-177380176081273/?" target="_blank" style="margin-left:25px;">facebook</a>
   </footer>
 	</div>
 	
