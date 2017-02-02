@@ -77,19 +77,23 @@
             $message = "Novo pedido gerado pelo cliente ".$_SESSION['cliente']['clienteNome']." - ".$_SESSION['cliente']['clienteEmail'].": '".$cupom['cupomTitulo']."'";
             auxSendMail('', 'contato@bitgift.com.br', $message, 'Novo Pedido!!');
 
-            $message = "Obrigado por ter escolhido a BitGift para trocar seus Bitcoins por cartões de presente. É uma grande satisfação ter você como usuário.<br>
-            Abaixo estão os dados da carteira para onde você deverá transferir os Bitcoins. Não digite os caracteres. Corte e cole o link para executar a transferência ou utilize o leitor de QR Code para pagamento pelo aplicativo no seu celular.<br>
+            $message = "Muito obrigado por ter escolhido a BitGift!  É uma grande satisfação ter você como nosso cliente :)<br><br>
+            Agora para procedermos com seu pedido e entrega de seu Vale-Presente você precisa completar o pagamento transferindo a quantia de Bitcoins referente ao valor de sua compra, os dados necessários estão logo abaixo:<br>
             <br><br>
-            https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V
-            <br><br>
-            Resumo do seu pedido:<br>
-            Cupom selecionado: ".$cupom['cupomTitulo']." <br>
-            Valor Do Cupom: R$ ".$cupom['cupomValorExibir']." <br>
-            Valor Total da transferência: R$ ".$cupom['cupomValorCobrar']." <br><br>
+            <strong>Resumo do seu pedido:</strong><br>
+            Vale-Presente selecionado: ".$cupom['cupomTitulo']."<br>
+            Valor Do Cupom: R$ ".$cupom['cupomValorExibir']."<br>
+            Valor Total a Pagar: R$ ".$cupom['cupomValorCobrar']."<br><br>
 
-            O seu cartão de presente selecionado será automaticamente enviado assim que identificarmos o crédito. Entre em contato conosco no telefone 11 99988 8777 ou pelo e-mail <contato@bitgift.com.br> caso tenha qualquer dúvida.<br>
-            Grande abraço,<br>
-            BitGift";
+            Endereço da carteira para transfência dos Bitcoins: 1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V <br><br>
+
+            Você também pode usar o leitor de QR Code para pagamento pelo aplicativo no seu celular.<br><br>
+
+            Para ter certeza que você está enviando para a carteira correta, disponibilizados o link dela aqui: <a href='https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V '>https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V </a><br><br>
+            
+            Após realizar sua transfêrencia por favor no envie o comprovante da mesma aqui mesmo por este e-mail para possamos validá-lo e entregar para você seu Vale-Presente. Normalmente este processo de confirmação e entrega de seu Vale-Presente pode levar até 24h mas fique tranquilo pois estamos aqui de prontidão para atendê-lo a qualquer dúvida. Caso ache necessário você também pode entrar em contato conos pelo Whatsapp no (11) 983054953.<br><br>
+            Att,<br><br>
+            Equipe BitGift";
 
             auxSendMail('', $_SESSION['cliente']['clienteEmail'], $message, 'BitGift - Complete sua compra!');
 

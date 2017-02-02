@@ -70,9 +70,9 @@
 	    </div>
 	  </div>
 
-  
 
-  <div id="contato" class="fundo-verde">
+
+  <div id="contato" class="fundo-verde" style="margin-top:0;">
     <div class="centro">
       <h3>Contato</h3>
       <form id="formContato" action="" method="post" onsubmit="sendMailContato(); return false; ">
