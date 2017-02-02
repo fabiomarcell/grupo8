@@ -84,16 +84,17 @@
     </div>
   </div>
 
-  	<section style="width:75%; display:block; margin:0 auto;">
-		<!-- Vitrine Inteligente Lomadee -->
-			<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
-		<!-- Vitrine Inteligente Lomadee -->
-	</section>
+
 
   <!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5892947a5dc9c102"></script> 
 
   <footer>
     <a href="https://www.facebook.com/BitGift-177380176081273/?" target="_blank" style="margin-left:25px;">facebook</a>
+      	<section style="width:75%; display:block; margin:0 auto;">
+			<!-- Vitrine Inteligente Lomadee -->
+				<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
+			<!-- Vitrine Inteligente Lomadee -->
+		</section>
   </footer>
 	</div>
 	
