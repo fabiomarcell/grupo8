@@ -11,12 +11,13 @@
         $pg += 1;
         $html = "";
         foreach ( $registros as $registro ) {
-            $html .= '<div class="cupom">
+            $html .= '<div class="cupom" style="height:auto;">
                         <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')"><img src="grupo8/'.$registro['foto'].'"/></a>
                         <h4>'.$registro['cupomTitulo'].'</h4>
                         <p>'.nl2br($registro['cupomDescricao']).'</p>
                         <p class="preco">R$ '. number_format($registro['cupomValorExibir'], 2, ',', '.').'</p>
                         <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')" class="tag">'.$registro['cupomOrigem'].'</a>
+                        <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')" class="btn btn-primary" style="width:100%;">Faça seu pedido agora!</a>
                       </div>';
         }
         die( json_encode( array( "results" => $html, "pg" => $pg, "totalItens" => count( $registros ) ) ) );
