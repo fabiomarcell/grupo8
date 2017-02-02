@@ -38,23 +38,23 @@
       <h3>Como Funciona?</h3>
       <div class="explicacao">
 	<img src="img/1.png"/>
-	<p>Escolha em nosso site o vale presente de um dos e-commerces parceiros</p>
+	<p>Escolha o Vale Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
   </div>
       <div class="explicacao">
   <img src="img/3.png"/>
-  <p>Selecione o valor ($20, $50 ou $100)</p>
+  <p>Selecione o Valor de Bitcoin que deseja transformar em Vale-Presente!</p>
       </div>
       <div class="explicacao">
 	<img src="img/3.png"/>
-	<p>Efetue o pagamento em bitcoins</p>
+	<p>Efetue sua transferência para nossa carteira de Bitcoin.</p>
       </div>
       <div class="explicacao">
 	<img src="img/4.png"/>
-	<p>Receba seu vale presente virtual por e-mail</p>
+	<p>Receba seu Vale Presente virtual direto no seu e-mail!</p>
       </div>
        <div class="explicacao">
   <img src="img/5.png"/>
-  <p>Use nossa solução e boas compras!</p>
+  <p>Agora é só escolher quem você vai presentar, vão ter achar "o cara" <strong>/o/</strong></p>
       </div>
       <div id="regras"> 
             <h4>Como funciona?</h4>
