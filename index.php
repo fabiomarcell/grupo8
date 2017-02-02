@@ -57,15 +57,15 @@
       </div>
       <div id="regras"> 
       	<div class="centro">
-            <h3>E como a BitGift ganha com isso?</h3>
+            <h3 style="text-align:center;">Taxas, Prazos e  Valores de Vale-presente BITGIFT</h3>
         </div>
-      <p>Nós cobramos uma taxa mínima pela operação, de acordo com o valor do vale presente selecionado:</p>
+      <!--<p>Nós cobramos uma taxa mínima pela operação, de acordo com o valor do vale presente selecionado:</p>-->
   <ul>
-      <li> 10% para o vale presente de R$20</li>
-      <li> 5% para o vale presente de R$50</li>
-      <li> 3% para o vale presente de R$100</li>
+      <li> Atualmente cobramos uma taxa de 3% por cada transação realizada e nada mais!</li>
+      <li> O processo de recebimento e entrega de seu Vale-Presente pode levar até 24 horas.</li>
+      <li> Os valores dos Vale-Presentes estão fixados em valores que variam de R$25 até R$100. Caso você esteja interessado em um valor superior por favor entre em contato com nossa equipe pelo contato@bitgift.com.br ou nosso Whatsapp (11) 983054953  </li>
   </ul>
-       <p> Nós também recebemos uma comissão do site onde você efetuar sua compra, caso você use o link enviado para seu e-mail para acessar o site parceiro. E você não paga nada a mais por isso.</p>
+       <!--<p> Nós também recebemos uma comissão do site onde você efetuar sua compra, caso você use o link enviado para seu e-mail para acessar o site parceiro. E você não paga nada a mais por isso.</p>-->
      </div>
     </div>
   </div>
