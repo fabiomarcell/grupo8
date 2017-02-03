@@ -77,8 +77,8 @@
             $message = "Novo pedido gerado pelo cliente ".$_SESSION['cliente']['clienteNome']." - ".$_SESSION['cliente']['clienteEmail'].": '".$cupom['cupomTitulo']."'";
             auxSendMail('', 'contato@bitgift.com.br', $message, 'Novo Pedido!!');
 
-            $message = "Muito obrigado por ter escolhido a BitGift!  É uma grande satisfação ter você como nosso cliente :)<br><br>
-            Agora para procedermos com seu pedido e entrega de seu Vale-Presente você precisa completar o pagamento transferindo a quantia de Bitcoins referente ao valor de sua compra, os dados necessários estão logo abaixo:<br>
+            $message = "Obrigado por escolher a BitGift para trocar seus Bitcoins por vales presente! É uma grande satisfação ter você como usuário.<br><br>
+            Agora para procedermos com seu pedido e entregar seu Vale-Presente você precisa completar o pagamento transferindo a quantia de Bitcoins referente ao valor de sua compra. Os dados necessários estão logo abaixo:<br>
             <br><br>
             <strong>Resumo do seu pedido:</strong><br>
             Vale-Presente selecionado: ".$cupom['cupomTitulo']."<br>
@@ -91,7 +91,9 @@
 
             Para ter certeza que você está enviando para a carteira correta, disponibilizados o link dela aqui: <a href='https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V '>https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V </a><br><br>
 
-            Após realizar sua transfêrencia por favor no envie o comprovante da mesma aqui mesmo por este e-mail para possamos validá-lo e entregar para você seu Vale-Presente. Normalmente este processo de confirmação e entrega de seu Vale-Presente pode levar até 24h mas fique tranquilo pois estamos aqui de prontidão para atendê-lo a qualquer dúvida. Caso ache necessário você também pode entrar em contato conos pelo Whatsapp no (11) 983054953.<br><br>
+            Assim que identificarmos o crédito você será comunicado. A confirmação pode demorar por instabilidade no processamento, mas não deve ser superior a 15 horas.
+
+            Entre em contato conosco no telefone 11 98305-4953 ou pelo e-mail contato@bitgift.com.br caso tenha qualquer dúvida..<br><br>
             Att,<br><br>
             Equipe BitGift";
 
