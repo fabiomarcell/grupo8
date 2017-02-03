@@ -3,7 +3,7 @@
 
 	  <div id="banner">
 	    <div class="centro">
-	      <h2 style="height:450px;">Aqui seus Bitcoins viram presentes!</h2>
+	      <h2 style="height:450px;">Aqui seus bitcoins viram presentes!</h2>
 	    </div>
 	  </div>
 
@@ -11,7 +11,7 @@
 
 	<div id="cupons" >
 	    <div class="centro res">
-	    <h3><strong>Vale Presentes Disponíveis</strong></h3>
+	    <h3><strong>Vales-Presente Disponíveis</strong></h3>
 	      <!--Stuff-->
 	    </div>
 	    <div class="centro">
@@ -28,7 +28,7 @@
       <h3>Como funciona?</h3>
       <div class="explicacao">
 	<img src="img/1b.png"/>
-	<p>Escolha o Vale Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
+	<p>Escolha o Vale-Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
   </div>
       <div class="explicacao">
   <img src="img/2b.png"/>
@@ -48,7 +48,7 @@
       </div>
       <div id="regras"> 
       	<div class="centro">
-            <h3 style="text-align:center;">Taxas, Prazos e  Valores de Vale-presente BITGIFT</h3>
+            <h4 style="text-align:center;">Taxas, Prazos e  Valores de Vale-presente BITGIFT</h4>
         </div>
       <!--<p>Nós cobramos uma taxa mínima pela operação, de acordo com o valor do vale presente selecionado:</p>-->
   <ul>
@@ -66,7 +66,7 @@
 	<div id="sobre" style="text-align:center;">
 	    <div class="centro">
 	      <h3>Sobre</h3>
-	      <p>A Bitgift surgiu com o propósito de facilitar suas compras em e-commerces usando bitcoins. Você pode adquirir um vale presente de e-commerces selecionados em nosso site, pagar em bitcoins e usá-lo normalmente na loja virtual. Sem necessidade de efetuar transação com sua corretora, e pagando menos por isso.</p>
+	      <p>A Bitgift surgiu com o propósito de facilitar suas compras em e-commerces usando bitcoins. Você pode adquirir um vale presente de e-commerces selecionados em nosso site, pagar em bitcoins e usá-lo normalmente na loja virtual. <br>Sem necessidade de efetuar transação com sua corretora, e pagando menos por isso.</p>
 	    </div>
 	  </div>
 
