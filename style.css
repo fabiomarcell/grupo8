@@ -109,6 +109,9 @@ h3 {
 .clear {
   clear:both;
 }
+#contato h4 {
+  font-weight: bold;
+}
 .fundo-verde {
   background: #5CF5AB;
   color: white;
