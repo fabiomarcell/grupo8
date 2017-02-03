@@ -15,7 +15,11 @@
                         <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')"><img src="grupo8/'.$registro['foto'].'"/></a>
                         <h4>'.$registro['cupomTitulo'].'</h4>
                         <p>'.nl2br($registro['cupomDescricao']).'</p>
-                        <p class="preco">R$ '. number_format($registro['cupomValorExibir'], 2, ',', '.').'</p>
+                        <p class="preco" style="position: absolute; top: 76px; background-color: #6bf2a3; 
+                                            color: #FFF; right: 0px; font-size: 20px; padding: 5px 10px 5px 10px; 
+                                            text-shadow: 1px 1px #CCC;">
+                                            R$ '. number_format($registro['cupomValorExibir'], 2, ',', '.').'
+                        </p>                        
                         <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')" class="tag">'.$registro['cupomOrigem'].'</a>
                         <img src="img/comprar.png" onclick="checkSession('.$registro['cupomID'].')" style="width: 80%; cursor: pointer; margin-bottom: 20px;" >
                       </div>';
