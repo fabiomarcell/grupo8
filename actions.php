@@ -12,7 +12,7 @@
         $html = "";
         foreach ( $registros as $registro ) {
             $html .= '<div class="cupom" style="height:auto; position:relative;">
-                        <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')"><img src="grupo8/'.$registro['foto'].'"/></a>
+                        <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')"><img src="grupo8/'.$registro['foto'].'" style="height:109px;" /></a>
                         <h4>'.$registro['cupomTitulo'].'</h4>
                         <p>'.nl2br($registro['cupomDescricao']).'</p>
                         <p class="preco" style="position: absolute; top: 76px; background-color: #6bf2a3; 
