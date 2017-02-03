@@ -94,7 +94,7 @@
 
   <footer>
       	<section style="width:75%; display:block; margin:0 auto;">
-      		<h3 style="text-align:center;">Sugestões de presentes</h3>
+      		<h3 style="text-align:center; font-weight: bold;">Sugestões de presentes</h3>
 			<!-- Vitrine Inteligente Lomadee -->
 				<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
 			<!-- Vitrine Inteligente Lomadee -->
