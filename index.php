@@ -261,14 +261,14 @@
 			function novoPedido(cupom){
 
 				bootbox.confirm({
-				    message: 	"Deseja realizar um novo pedido?",
+				    message: 	"Confirmar o pedido?",
 				    buttons: {
 				        confirm: {
-				            label: 'Sim!',
+				            label: 'Sim',
 				            className: 'btn-success'
 				        },
 				        cancel: {
-				            label: 'Não...',
+				            label: 'Não',
 				            className: 'btn-danger'
 				        }
 				    },
