@@ -11,7 +11,7 @@
         $pg += 1;
         $html = "";
         foreach ( $registros as $registro ) {
-            $html .= '<div class="cupom" style="height:auto;">
+            $html .= '<div class="cupom" style="height:auto; position:relative;">
                         <a href="javascript:void(0);" onclick="checkSession('.$registro['cupomID'].')"><img src="grupo8/'.$registro['foto'].'"/></a>
                         <h4>'.$registro['cupomTitulo'].'</h4>
                         <p>'.nl2br($registro['cupomDescricao']).'</p>
