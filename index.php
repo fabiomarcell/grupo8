@@ -63,7 +63,7 @@
 
 
 
-	<div id="sobre" >
+	<div id="sobre" style="text-align:center;">
 	    <div class="centro">
 	      <h3>Sobre</h3>
 	      <p>A Bitgift surgiu com o propósito de facilitar suas compras em e-commerces usando bitcoins. Você pode adquirir um vale presente de e-commerces selecionados em nosso site, pagar em bitcoins e usá-lo normalmente na loja virtual. Sem necessidade de efetuar transação com sua corretora, e pagando menos por isso.</p>
