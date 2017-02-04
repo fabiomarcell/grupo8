@@ -25,7 +25,7 @@
 
   <div id="funcionamento" class="fundo-verde">
     <div class="centro">
-      <h3>Como funciona?</h3>
+      <h3 style= "font-weight: bold; margin-bottom: 40px; margin-top 20px;">Como funciona?</h3>
       <div class="explicacao">
 	<img src="img/1b.png"/>
 	<p>Escolha o Vale-Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
@@ -54,7 +54,8 @@
   <ul>
       <li> Atualmente cobramos uma taxa de 3% por cada transação realizada e nada mais!</li>
       <li> O processo de recebimento e entrega de seu Vale-Presente pode levar até 24 horas.</li>
-      <li> Os valores dos Vale-Presentes estão fixados em valores que variam de R$25 até R$100. Caso você esteja interessado em um valor superior por favor entre em contato com nossa equipe pelo contato@bitgift.com.br ou nosso Whatsapp (11) 983054953  </li>
+      <li> Os valores dos Vale-Presentes estão fixados em valores que variam de R$25 até R$100. Caso você esteja interessado em um valor superior por favor entre em 
+	      com nossa equipe pelo contato@bitgift.com.br ou nosso Whatsapp (11) 983054953  </li>
   </ul>
        <!--<p> Nós também recebemos uma comissão do site onde você efetuar sua compra, caso você use o link enviado para seu e-mail para acessar o site parceiro. E você não paga nada a mais por isso.</p>-->
      </div>
@@ -74,7 +75,7 @@
 
   <div id="contato" class="fundo-verde" style="margin-top:0;">
     <div class="centro">
-      <h3>Contato</h3>
+      <h3 style="font-weight: bold;">Contato</h3>
       <form id="formContato" action="" method="post" onsubmit="sendMailContato(); return false; ">
 		<input type="text" name="nome" id="nome" placeholder="Informe seu nome..." required class="form-control"> 
 		<input type="email" name="email" id="email" placeholder="Informe seu Email..." required class="form-control"> 
