@@ -77,8 +77,8 @@
     <div class="centro">
       <h3 style="font-weight: bold;">Quer algo especial? Fale conosco !</h3>
       <form id="formContato" action="" method="post" onsubmit="sendMailContato(); return false; ">
-		<input type="text" name="nome" id="nome" placeholder="Informe seu nome..." required class="form-control"> 
-		<input type="email" name="email" id="email" placeholder="Informe seu Email..." required class="form-control"> 
+		<input type="text" name="nome" id="nome" placeholder="Nome..." required class="form-control"> 
+		<input type="email" name="email" id="email" placeholder="Email..." required class="form-control"> 
 		<input type="hidden" name="exec" id="exec" value="sendMailContato"> 
 		<textarea name="message" id="message" placeholder="Informe sua mensagem..." required class="form-control"></textarea>
 		<br>
