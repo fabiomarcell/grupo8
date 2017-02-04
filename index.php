@@ -75,7 +75,7 @@
 
   <div id="contato" class="fundo-verde" style="margin-top:0;">
     <div class="centro">
-      <h3 style="font-weight: bold;">Contato</h3>
+      <h3 style="font-weight: bold;">Quer algo especial? Fale conosco !</h3>
       <form id="formContato" action="" method="post" onsubmit="sendMailContato(); return false; ">
 		<input type="text" name="nome" id="nome" placeholder="Informe seu nome..." required class="form-control"> 
 		<input type="email" name="email" id="email" placeholder="Informe seu Email..." required class="form-control"> 
