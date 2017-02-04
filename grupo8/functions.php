@@ -795,6 +795,7 @@
                     C.cupomImagem from tblCupons C
                     
                             " . $where . "
+                            order by C.cupomID desc
                             LIMIT " . $qtd . " OFFSET " . $finish;
                     //die(json_encode($sql));
 
