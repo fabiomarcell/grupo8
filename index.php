@@ -263,6 +263,10 @@
 	                        	novoPedido(cupom);
 	                        }
 				    	}
+				    	
+				    	else{
+	                        $(".res").fadeTo("slow", 1);
+				    	}
 				    }
 				});
 
