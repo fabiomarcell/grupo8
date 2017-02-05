@@ -233,23 +233,88 @@
 				    },
 				    callback: function (result) {
 				    	if(result){
-				    		$.ajax({
-				                type: "POST",
-				                url: "actions.php",
-				                data: {
-				                	exec: 'verifCliente',
-				                	nome: $("#registerName").val(),
-				                	email: $("#registerEmail").val(),
-				                	telefone: $("#registerTelefone").val(),
-				                },
-				                dataType: 'json',
-				                processData: true,
-				                success: function (data) {
-				                    console.log(data);
-				                }
-				            });
-				    		//console.log('This was logged in the callback: ' + $("#registerName").val());	
-                        	novoPedido(cupom);
+				    		var atpos = $("#registerEmail").val().indexOf("@");
+						    var dotpos = $("#registerEmail").val().lastIndexOf(".");
+
+				    		if($("#registerName").val() == ''){
+				    			callRegisterValidate(cupom, "Nome Inválido", $("#registerName").val(), $("#registerEmail").val(), $("#registerTelefone").val());
+				    		}
+				    		else if($("#registerEmail").val() == '' || atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+				    			callRegisterValidate(cupom, 'Email inválido', $("#registerName").val(), $("#registerEmail").val(), $("#registerTelefone").val());
+				    		}
+				    		else{
+					    		$.ajax({
+					                type: "POST",
+					                url: "actions.php",
+					                data: {
+					                	exec: 'verifCliente',
+					                	nome: $("#registerName").val(),
+					                	email: $("#registerEmail").val(),
+					                	telefone: $("#registerTelefone").val(),
+					                },
+					                dataType: 'json',
+					                processData: true,
+					                success: function (data) {
+					                    console.log(data);
+					                }
+					            });
+					    		//console.log('This was logged in the callback: ' + $("#registerName").val());	
+	                        	novoPedido(cupom);
+	                        }
+				    	}
+				    }
+				});
+
+			}
+
+			function callRegisterValidate(cupom, message, nome, email, tel){
+				bootbox.confirm({
+				    message: 	"Olá! Você precisa se identificar para prosseguir.<br>"+
+				    			"Assim que o procedimento for finalizado, nós iremos entrar em contato diretamente com você!<br><br>"+
+				    			"<input type='text' id='registerName' class='form-control' placeholder='Informe seu nome*' value='"+nome+"'>"+
+				    			"<input type='email' id='registerEmail' class='form-control' placeholder='Informe seu E-mail*' value='"+email+"'>"+
+				    			"<input type='telefone' id='registerTelefone' class='form-control' placeholder='Informe seu Telefone(não obrigatório)' value='"+telefone+"'>"+
+				    			"<br><span>"+message+"</span>",
+				    buttons: {
+				        confirm: {
+				            label: 'Enviar!',
+				            className: 'btn-success'
+				        },
+				        cancel: {
+				            label: 'Cancelar...',
+				            className: 'btn-danger'
+				        }
+				    },
+				    callback: function (result) {
+				    	if(result){
+				    		var atpos = $("#registerEmail").val().indexOf("@");
+						    var dotpos = $("#registerEmail").val().lastIndexOf(".");
+
+				    		if($("#registerName").val() == ''){
+				    			callRegisterValidate(cupom, "Nome Inválido", $("#registerName").val(), $("#registerEmail").val(), $("#registerTelefone").val());
+				    		}
+				    		else if($("#registerEmail").val() == '' || atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length){
+				    			callRegisterValidate(cupom, 'Email inválido', $("#registerName").val(), $("#registerEmail").val(), $("#registerTelefone").val());
+				    		}
+				    		else{
+					    		$.ajax({
+					                type: "POST",
+					                url: "actions.php",
+					                data: {
+					                	exec: 'verifCliente',
+					                	nome: $("#registerName").val(),
+					                	email: $("#registerEmail").val(),
+					                	telefone: $("#registerTelefone").val(),
+					                },
+					                dataType: 'json',
+					                processData: true,
+					                success: function (data) {
+					                    console.log(data);
+					                }
+					            });
+					    		//console.log('This was logged in the callback: ' + $("#registerName").val());	
+	                        	novoPedido(cupom);
+	                        }
 				    	}
 				    }
 				});
