@@ -93,7 +93,7 @@
 
             Você também pode usar o leitor de QR Code para pagamento pelo aplicativo no seu celular.<br><br>
 
-            Para ter certeza que você está enviando para a carteira correta, disponibilizados o link dela aqui: <a href='https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V '>https://blockchain.info/address/1PwYLZHKMMtvkoKB72xy7EFEavQm2Sbq3V </a><br><br>
+            Para ter certeza que você está enviando para a carteira correta, disponibilizados o link dela aqui: <a href='https://blockchain.info/address/13LZffSZLm9i5mHQqT8RTbQ1w2BSNSCPpQ'>https://blockchain.info/address/13LZffSZLm9i5mHQqT8RTbQ1w2BSNSCPpQ</a><br><br>
 
             Assim que identificarmos o crédito você será comunicado. A confirmação pode demorar por instabilidade no processamento, mas não deve ser superior a 15 horas.
 
