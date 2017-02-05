@@ -275,7 +275,7 @@
 				    			"<input type='text' id='registerName' class='form-control' placeholder='Informe seu nome*' value='"+nome+"'>"+
 				    			"<input type='email' id='registerEmail' class='form-control' placeholder='Informe seu E-mail*' value='"+email+"'>"+
 				    			"<input type='telefone' id='registerTelefone' class='form-control' placeholder='Informe seu Telefone(não obrigatório)' value='"+tel+"'>"+
-				    			"<br><span>"+message+"</span>",
+				    			"<br><span style='color:#F00;'>"+message+"</span>",
 				    buttons: {
 				        confirm: {
 				            label: 'Enviar!',
