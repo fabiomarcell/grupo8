@@ -3,7 +3,7 @@
 
 	  <div id="banner">
 	    <div class="centro">
-	      <h2 style="height:450px;">Aqui seus Bitcoins viram presentes!</h2>
+	      <h2 style="height:450px;">Aqui seus bitcoins viram presentes!</h2>
 	    </div>
 	  </div>
 
@@ -11,7 +11,7 @@
 
 	<div id="cupons" >
 	    <div class="centro res">
-	    <h3><strong>Vale Presentes Disponíveis</strong></h3>
+	    <h3><strong>Vales-Presente Disponíveis</strong></h3>
 	      <!--Stuff-->
 	    </div>
 	    <div class="centro">
@@ -25,10 +25,10 @@
 
   <div id="funcionamento" class="fundo-verde">
     <div class="centro">
-      <h3>Como funciona?</h3>
+      <h3 style= "font-weight: bold; margin-bottom: 40px; margin-top 20px;">Como funciona?</h3>
       <div class="explicacao">
 	<img src="img/1b.png"/>
-	<p>Escolha o Vale Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
+	<p>Escolha o Vale-Presente que você desejar, são diversas opções: Submarino, Americanas, Saraiva.</p>
   </div>
       <div class="explicacao">
   <img src="img/2b.png"/>
@@ -48,13 +48,14 @@
       </div>
       <div id="regras"> 
       	<div class="centro">
-            <h3 style="text-align:center;">Taxas, Prazos e  Valores de Vale-presente BITGIFT</h3>
+            <h4 style="text-align:center;">Taxas, Prazos e  Valores de Vale-presente BITGIFT</h4>
         </div>
       <!--<p>Nós cobramos uma taxa mínima pela operação, de acordo com o valor do vale presente selecionado:</p>-->
   <ul>
       <li> Atualmente cobramos uma taxa de 3% por cada transação realizada e nada mais!</li>
       <li> O processo de recebimento e entrega de seu Vale-Presente pode levar até 24 horas.</li>
-      <li> Os valores dos Vale-Presentes estão fixados em valores que variam de R$25 até R$100. Caso você esteja interessado em um valor superior por favor entre em contato com nossa equipe pelo contato@bitgift.com.br ou nosso Whatsapp (11) 983054953  </li>
+      <li> Os valores dos Vale-Presentes estão fixados em valores que variam de R$25 até R$100. Caso você esteja interessado em um valor superior por favor entre em 
+	      com nossa equipe pelo contato@bitgift.com.br ou nosso Whatsapp (11) 983054953  </li>
   </ul>
        <!--<p> Nós também recebemos uma comissão do site onde você efetuar sua compra, caso você use o link enviado para seu e-mail para acessar o site parceiro. E você não paga nada a mais por isso.</p>-->
      </div>
@@ -66,7 +67,7 @@
 	<div id="sobre" style="text-align:center;">
 	    <div class="centro">
 	      <h3>Sobre</h3>
-	      <p>A Bitgift surgiu com o propósito de facilitar suas compras em e-commerces usando bitcoins. Você pode adquirir um vale presente de e-commerces selecionados em nosso site, pagar em bitcoins e usá-lo normalmente na loja virtual. Sem necessidade de efetuar transação com sua corretora, e pagando menos por isso.</p>
+	      <p>A Bitgift surgiu com o propósito de facilitar suas compras em e-commerces usando bitcoins. Você pode adquirir um vale presente de e-commerces selecionados em nosso site, <br> pagar em bitcoins e usá-lo normalmente na loja virtual. <br>Sem necessidade de efetuar transação com sua corretora, e pagando menos por isso.</p>
 	    </div>
 	  </div>
 
@@ -74,10 +75,10 @@
 
   <div id="contato" class="fundo-verde" style="margin-top:0;">
     <div class="centro">
-      <h3>Contato</h3>
+      <h3 style="font-weight: bold;">Quer algo especial? Fale conosco !</h3>
       <form id="formContato" action="" method="post" onsubmit="sendMailContato(); return false; ">
-		<input type="text" name="nome" id="nome" placeholder="Informe seu nome..." required class="form-control"> 
-		<input type="email" name="email" id="email" placeholder="Informe seu Email..." required class="form-control"> 
+		<input type="text" name="nome" id="nome" placeholder="Nome..." required class="form-control"> 
+		<input type="email" name="email" id="email" placeholder="Email..." required class="form-control"> 
 		<input type="hidden" name="exec" id="exec" value="sendMailContato"> 
 		<textarea name="message" id="message" placeholder="Informe sua mensagem..." required class="form-control"></textarea>
 		<br>
@@ -94,7 +95,7 @@
 
   <footer>
       	<section style="width:75%; display:block; margin:0 auto;">
-      		<h3 style="text-align:center;">Sugestões de presentes</h3>
+      		<h3 style="text-align:center; font-weight: bold;">Sugestões de presentes</h3>
 			<!-- Vitrine Inteligente Lomadee -->
 				<script type="text/javascript" class="lomadee-recommender-script" src="//ad.lomadee.com/recommender/script/eyJwdWJsaXNoZXJJZCI6MjI3NDUzNjMsInNpdGVJZCI6MzM4OTQ0NzksInNvdXJjZUlkIjozNTc0NTM2N30%3D.js"></script>
 			<!-- Vitrine Inteligente Lomadee -->
@@ -326,14 +327,14 @@
 			function novoPedido(cupom){
 
 				bootbox.confirm({
-				    message: 	"Deseja realizar um novo pedido?",
+				    message: 	"Confirmar o pedido?",
 				    buttons: {
 				        confirm: {
-				            label: 'Sim!',
+				            label: 'Sim',
 				            className: 'btn-success'
 				        },
 				        cancel: {
-				            label: 'Não...',
+				            label: 'Não',
 				            className: 'btn-danger'
 				        }
 				    },

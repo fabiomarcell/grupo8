@@ -43,8 +43,9 @@ h3 {
 #banner h2 {
   margin: 0;
   font-weight: normal;
-  width: 300px;
-  font-size: 30px;
+  max-width: 340px;
+  width: 80%;
+  font-size: 40px;
   padding-top: 45px;
 }
 .centro {
@@ -54,10 +55,33 @@ h3 {
 }
 #cupons {
   text-align: center;
+  padding-top: 30px;
 }
 #cupons h3 {
+  margin-bottom: 40px;
   margin-top 20px;
   font-size: 24px;
+}
+#cupons .centro button {
+  margin-top: 30px;
+}
+#regras h3 {
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+#regras h4 {
+  font-weight: bold;
+}
+#sobre {
+  color: #777;
+}
+#sobre p {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+#sobre h3 {
+ font-weight: bold;
 }
 #cupons .cupom {
   box-shadow: 0 0 15px 5px #CCC;
@@ -84,6 +108,9 @@ h3 {
 }
 .clear {
   clear:both;
+}
+#contato h4 {
+  font-weight: bold;
 }
 .fundo-verde {
   background: #5CF5AB;
